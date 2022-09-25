@@ -33,31 +33,29 @@ body {
     height: 50px;
     margin-right: 200px;
 }
-
 ul {
     color: white;
     list-style: none;
     text-decoration: none;
 }
 .header__link {
-    color: #ffffff;
+    color: bisque;
     text-decoration: none;
+    font-family: 'Playfair', serif;
 }
 li {
     text-decoration: none;
     display: inline-block;
     padding: 5px;
     margin: 10px;
-    border: 2px solid bisque;
     cursor: pointer;
-    background: linear-gradient(to left, transparent 50%, rgb(24, 171, 205));
+    background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
     background-size: 200%;
     background-position: right;
     transition: background-position 0.2s;
 }
 li:hover {
     background-position: left;
-    color: blue;
     font-weight: 700;
 }
 main {
@@ -84,18 +82,30 @@ main {
     font-size: 5rem;
     margin: 30px;
     letter-spacing: 2vw;
+    font-family: 'Playfair Display', serif;
 }
 .main__section1__eslogan {
     font-size: 2rem;
     margin: 5px 5px 40px 5px;
+    font-family: 'Playfair', serif;
 }
 .main__section1__reserva {
     font-size: 3.6rem;
     color: bisque;
-    border: 2px solid blue;
     margin: 40px;
     text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.2s;
 }
+.main__section1__reserva:hover {
+    background-position: left;
+    font-weight: 700;
+}
+
+
 .main__video {
     width: 100vw;
     height: auto;
@@ -115,17 +125,18 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.2rem;
-    background-color: black;
+    background-image: linear-gradient(black, rgb(51, 50, 50));
     overflow: hidden;
 }
 .main__section2__titulo {
     font-size: 3rem;
     padding-top: 5vh;
+    font-family: 'Playfair Display', serif;
 }
 .main__section2__texto {
-    line-height: 1.5;
-    margin: 5px 20vw 5px 20vw;
+    font-size: 1.5rem;
+    margin: 5px 8vw 20px 8vw;
+    font-family: 'Playfair', serif;
 }
 .main__section3 {
     height: auto;
@@ -156,14 +167,15 @@ main {
 .main__section3__2columnas__subtitulo {
     font-size: 3rem;
     padding-top: 5vh;
+    font-family: 'Playfair Display', serif;
 }
 .main__section3__texto__columnas {
-    margin-left: 10vw;
+    margin-left: 50px;
     margin-right: 10vw;
     margin-bottom: 5vh;
     font-size: 1.5rem;
-    line-height: 1.3;
     color: bisque;
+    font-family: 'Playfair', serif;
 }
 .main__section3__2columnas__ubicacion {
     grid-area: ubicacion;
@@ -173,7 +185,7 @@ main {
     grid-area: servicio;
     margin-top: 30px;
 }
-.main__section3__2columnas__calidad {
+.main__section3__2columnas__garantia {
     grid-area: calidad;
     margin-top: 30px;
 }
