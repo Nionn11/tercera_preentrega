@@ -1,25 +1,132 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
-    grid-template-rows: 15vh auto 10vh;
+    display: grid;
+    grid-template-rows: 10vh auto auto auto;
     grid-template-areas: "header"
                          "main"
                          "footer";
 }
 .header {
     grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    font-size: 1rem;
+    background-color: white;
 }
 .header__logo {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
 }
-.main {
+
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+main {
+    width: 100vh;
     grid-area: main;
+    grid-template-rows: auto auto;
+    grid-template-areas: "section1"
+                         "section2";
 }
+.section1 {
+    width: 98.9vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    grid-area: section1;
+    background-color: rgba(247, 1, 1, 0.098);
+    margin-bottom: 10vh;
+}
+.section1__titulo {
+    font-size: 2rem;
+    margin: 30px;
+    letter-spacing: 2vw;
+}
+.section1__eslogan {
+    font-size: 1.3rem;
+    margin: 5px 5px 40px 5px;
+}
+.section1__reserva {
+    font-size: 2rem;
+    color: beige;
+    border: 2px solid blue;
+    margin: 40px;
+}
+.video {
+    width: 98.9vw;
+    height: auto;
+    padding-bottom: 5vh;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    z-index: -1;
+}
+.section2 {
+    height: auto;
+    width: 98.9vw;
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgb(139, 29, 29);
+    overflow: hidden;
+}
+.section2__titulo {
+    font-size: 1.5rem;
+    padding-top: 5vh;
+}
+.main__texto {
+        padding: 5vh 5vh 5vh 5vh;
+        line-height: 1.3;
+        margin: 5px;
+}
+.main__imagen {
+    width: 98.9vw;
+    height: auto;
+}
+.main__2columnas {
+    display: flex;
+        justify-content: space-around;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 35% 35%;
+    grid-template-areas: "ubicacion servicio"   
+                         "calidad precio";
+}
+.main__div__ubicacion {
+    grid-area: ubicacion;
+}
+.main__div__servicio {	
+    grid-area: servicio;
+}
+
 footer {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     grid-area: footer;
+    background-color: #64a168;
+    
 }
 .footer__red {
     height: 30px;

@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <a href="./index.html"><img src="./assets/images/Logo.png" alt="" class="header__logo"></a>
-        <h1>Hoteles el Paraiso</h1>
+        <!-- <h1 class="headr__titulo">Hoteles el Paraiso</h1> -->
         <ul>
             <li><a href="./index.html">INICIO</a></li>
             <li><a href="./pages/habitaciones.html">HABITACIONES</a></li>
@@ -23,48 +23,75 @@
             <li><a href="./pages/reserva.html">RESERVA</a></li>
         </ul>
     </header>
+    
 
     <main class="main">
+        
+        <section class="section1">
+            <h1 class="section1__titulo">HOTELES EL PARAISO</h1>
+            <p class="section1__eslogan">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, impedit.</p>
+            <a class="section1__reserva" href="./pages/reserva.html">RESERVA</a>
+        </section>
         <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/C9EnztVL0h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay muted></iframe>
-        </div>
-        <div>
-            <h2 class="main__titulo">¿Quienes somos?</h2>
-            <p>Somos una cadena hotelera que reside en más de 30 paises. Con mas de 100 sucursales ofrecemos, a nuestros clientes que viajan por placer o negocios, un ambiente cómodo y  acogedor  que  hará  su  estancia lo más comoda posible.</p>
-        </div>
-        <div>
-            <h2 class="main__titulo">Nuestra misión</h2>
-            <p>Nuestra misión es proveer un servicio integral en hotelería, implementando normas de calidad, siendo nuestra prioridad la satisfacción de  servicio  personalizado  a  nuestros  clientes,  en un ambiente familiar,  cómodo tranquilo y seguro</p>
-            <p>La estadía de cada huésped se arma a la medida, incluso desde antes de su llegada. El programa incluido cuenta con un guía privado, y con su apoyo se crean las experiencias más memorables. Nos enfocamos en entregar un servicio personalizado, prestando atención a cada d etalle.</p>
-        </div>
-        <div>
-            <img src="./assets/images/inicio.jpg" alt="">  
-        </div>
-        <div>
-            <h2 class="main__titulo">¿Por que elegirnos?</h2>  
-        </div>
-        <div>
-            <h3 class="main__subtitulo">UBICACIÓN</h3>
-            <p> La ubicación física y geográfica de todas nuestras sucursales es inigualable. Tiempo, espacio, y los elementos conforman un ambiente que aseguran una desconexión completa, dejando de lado el estrés de la vida.</p>
-        </div>
-        <div>
-            <h3 class="main__subtitulo">SERVICIO</h3>
-            <p>Contamos con una gran red de trabajadores expertos en su campo, para que cualquier pequeña preocupación sea resuelta en segundos. Además contamos con amplio sistema de red de apoyo, por lo que tendremos todo a su disposición </p>
-        </div>
+            <video class="video" src="./assets/video/video_background.mp4" autoplay muted loop></video>
+         </div>
+        
+        <section class="section2">
+            <h2 class="section2__titulo">¿Quienes somos?</h2>
+            <div>
+                <p class="main__texto">Somos una cadena hotelera que reside en más de 30 paises. Con mas de 100 sucursales ofrecemos, a nuestros clientes que viajan por placer o negocios, un ambiente cómodo y  acogedor  que  hará  su  estancia lo más comoda posible.</p>
+            </div>
+            <div>
+                <h2 class="main__titulo">Nuestra misión</h2>  
+            </div>
+            <div>
+                <p class="main__texto">Nuestra misión es proveer un servicio integral en hotelería, implementando normas de calidad, siendo nuestra prioridad la satisfacción de  servicio  personalizado  a  nuestros  clientes,  en un ambiente familiar,  cómodo tranquilo y seguro</p>
+            </div>
+            <div>
+                <p class="main__texto">La estadía de cada huésped se arma a la medida, incluso desde antes de su llegada. El programa incluido cuenta con un guía privado, y con su apoyo se crean las experiencias más memorables. Nos enfocamos en entregar un servicio personalizado, prestando atención a cada detalle.</p>
+            </div>
+            <div>
+                <!-- <img class="main__imagen" src="./assets/images/inicio.jpg" alt="">   -->
+            </div>
+            <div>
+                <h2 class="main__titulo">¿Por que elegirnos?</h2>  
+            </div>
+            <div class="main__2columnas">
+                <div class="main__div__ubicacion">
+                    <h3 class="main__subtitulo">UBICACIÓN</h3> 
+                    <p class="main__texto"> La ubicación física y geográfica de todas nuestras sucursales es inigualable. Tiempo, espacio, y los elementos conforman un ambiente que aseguran una desconexión completa, dejando de lado el estrés de la vida.</p>
+                </div>
+                <div class="main__div__servicio">
+                    <h3 class="main__subtitulo">SERVICIO</h3> 
+                    <p class="main__texto">Contamos con una gran red de trabajadores expertos en su campo, para que cualquier pequeña preocupación sea resuelta en segundos. Además contamos con amplio sistema de red de apoyo, por lo que tendremos todo a su disposición </p>
+                </div>
+                <div class="main__div__calidad">
+                    <h3>CALIDAD</h3>
+                    <p class="main__texto">Aseguramos la mejor calidad en todos los rubros para su disfrute</p>
+                </div>
+                <div class="main__div_precio">
+                    <h3>PRECIO</h3>
+                    <p class="main__texto">Contamos con la mejor relación calidad-precio del mercado. Tenemos todo tipo de alojamientos, tanto si buscas un alojamiento más minimalista o si prefieres tener lo mejor de lo mejor</p>
+                </div>
+            </div>
+        </section>
+        
+        
             
     </main>
 
     <footer clas="footer">
-        <div>
-            Contactenos a través de:
-            <div>
-                <a href="https://www.facebook.com/"> <img src="./assets/images/facebook.png" alt="" class="footer__red"></a>
-                <a href="https://twitter.com/"><img src="./assets/images/twitter.png" alt="" class="footer__red"></a>
-                <a href="https://www.instagram.com/"><img src="./assets/images/instagram.png" alt="" class="footer__red"></a>
-                <span>Telefono: +549 - 12345678</span>
-                <span>Correo: hotelelparaiso@gmail.com</span>
-            </div>
-        </div>
+                <p>Contactenos a través de:</p>
+                <div>
+                    <a href="https://www.facebook.com/"> <img src="./assets/images/facebook.png" alt="" class="footer__red"></a>
+                    <a href="https://twitter.com/"><img src="./assets/images/twitter.png" alt="" class="footer__red"></a>
+                    <a href="https://www.instagram.com/"><img src="./assets/images/instagram.png" alt="" class="footer__red"></a>  
+                </div>
+                <div>
+                    <span>Telefono: +549 - 12345678</span>
+                    <span>Correo: hotelelparaiso@gmail.com</span>  
+                </div>
+                
     </footer>
     
 </body>
