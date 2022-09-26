@@ -1,261 +1,252 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
-    width: 100vw;
-    color: bisque;
-    background-color: black;
-    display: grid;
-    grid-template-rows: 15vh auto 10vh;
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.header {
-    width: 100vw;
-    background-color: black;
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-    font-size: 1rem;
-}
-.header__logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 200px;
-}
-ul {
-    color: white;
-    list-style: none;
-    text-decoration: none;
-}
-.header__link {
-    color: bisque;
-    text-decoration: none;
-    font-family: 'Playfair', serif;
-}
-li {
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px;
-    margin: 10px;
-    cursor: pointer;
-    background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
-    background-size: 200%;
-    background-position: right;
-    transition: background-position 0.2s;
-}
-li:hover {
-    background-position: left;
-    font-weight: 700;
-}
-main {
-    width: 100vw;
-    grid-area: main;
-    grid-template-rows: auto auto;
-    grid-template-areas: "section1"
-                         "section2"
-                         "section3";
-}
-.main__section1 {
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    grid-area: section1;
-    background-color: rgba(0, 0, 0, 0.631);
-}
-.main__section1__titulo {
-    font-size: 5rem;
-    margin: 30px;
-    letter-spacing: 2vw;
-    font-family: 'Playfair Display', serif;
-}
-.main__section1__eslogan {
-    font-size: 2rem;
-    margin: 5px 5px 40px 5px;
-    font-family: 'Playfair', serif;
-}
-.main__section1__reserva {
-    font-size: 3.6rem;
-    color: bisque;
-    margin: 40px;
-    text-decoration: none;
-    cursor: pointer;
-    background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
-    background-size: 200%;
-    background-position: right;
-    transition: background-position 0.2s;
-}
-.main__section1__reserva:hover {
-    background-position: left;
-    font-weight: 700;
-}
-
-
-.main__video {
-    width: 100vw;
-    height: auto;
-    padding-bottom: 5vh;
-    position: absolute;
-    top: 15vh;
-    left: 0;
-    z-index: -1;
-}
-.main__section2 {
-    width: 100vw;
-    height: auto;
-    grid-area: section2;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: linear-gradient(black, rgb(51, 50, 50));
-    overflow: hidden;
-}
-.main__section2__titulo {
-    font-size: 3rem;
-    padding-top: 5vh;
-    font-family: 'Playfair Display', serif;
-}
-.main__section2__texto {
-    font-size: 1.5rem;
-    margin: 5px 8vw 20px 8vw;
-    font-family: 'Playfair', serif;
-}
-.main__section3 {
-    height: auto;
-    grid-area: section3;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: url(../assets/images/inicio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -100;
-}
-.main__section3__fondo {
-    background-color: rgba(0, 0, 0, 0.831);
-}
-.main__section3__2columnas {
-    display: flex;
-    justify-content: space-around;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "ubicacion servicio"   
-                         "calidad precio";
-}
-.main__section3__2columnas__subtitulo {
-    font-size: 3rem;
-    padding-top: 5vh;
-    font-family: 'Playfair Display', serif;
-}
-.main__section3__texto__columnas {
-    margin-left: 50px;
-    margin-right: 10vw;
-    margin-bottom: 5vh;
-    font-size: 1.5rem;
-    color: bisque;
-    font-family: 'Playfair', serif;
-}
-.main__section3__2columnas__ubicacion {
-    grid-area: ubicacion;
-    margin-top: 30px;
-}
-.main__section3__2columnas__servicio {	
-    grid-area: servicio;
-    margin-top: 30px;
-}
-.main__section3__2columnas__garantia {
-    grid-area: calidad;
-    margin-top: 30px;
-}
-.main__section3__2columnas__precio {
-    grid-area: precio;
-    margin-top: 30px;
-}
-.main__imagenes {
-    width: 200px;
-    height: 200px;
-}
-footer {
-    width: 100vw;
-    height: 10vh;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: footer;
-    background-color: black;
-    
-}
-.footer__red {
-    height: 30px;
-    width: 30px;
-}
-
-/* DESKTOP FIRST */
-
-
-@media only screen and (max-width: 1200px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100vw;
+        color: bisque;
+        background-color: black;
+        display: grid;
+        grid-template-rows: 15vh auto 10vh;
+        grid-template-areas: "header"
+                            "main"
+                            "footer";
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
     .header {
-        font-size: 0.8rem;
+        width: 100vw;
+        background-color: black;
+        grid-area: header;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+        font-size: 1rem;
     }
     .header__logo {
-        height: 40px;
-        width: 40px;
+        width: 50px;
+        height: 50px;
         margin-right: 200px;
-        margin-left: 20px;
+    }
+    ul {
+        color: white;
+        list-style: none;
+        text-decoration: none;
+    }
+    .header__link {
+        color: bisque;
+        text-decoration: none;
+        font-family: 'Playfair', serif;
     }
     li {
+        text-decoration: none;
+        display: inline-block;
         padding: 5px;
-        margin: 5px;
-        border: 1px solid bisque;
+        margin: 10px;
+        cursor: pointer;
+        background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
+        background-size: 200%;
+        background-position: right;
+        transition: background-position 0.2s;
     }
-    .section1 {
-        height: 60vh;
+    li:hover {
+        background-position: left;
+        font-weight: 700;
     }
-    .section1__titulo {
-    font-size: 2rem;
-    margin: 30px;
-    letter-spacing: 2vw;
-}
-.section1__eslogan {
-    font-size: 1.3rem;
-    margin: 5px 5px 40px 5px;
-}
-.section1__reserva {
-    font-size: 2rem;
-    color: beige;
-    border: 2px solid blue;
-    margin: 40px;
-}
-}
+    main {
+        width: 100vw;
+        grid-area: main;
+        grid-template-rows: auto auto;
+        grid-template-areas: "section1"
+                            "section2"
+                            "section3";
+    }
+    .main__section1 {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        grid-area: section1;
+        background-color: rgba(0, 0, 0, 0.631);
+    }
+    .main__section1__titulo {
+        font-size: 5rem;
+        margin: 30px;
+        letter-spacing: 2vw;
+        font-family: 'Playfair Display', serif;
+    }
+    .main__section1__eslogan {
+        font-size: 2rem;
+        margin: 5px 5px 40px 5px;
+        font-family: 'Playfair', serif;
+    }
+    .main__section1__reserva {
+        font-size: 3.6rem;
+        color: bisque;
+        margin: 40px;
+        text-decoration: none;
+        cursor: pointer;
+        background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
+        background-size: 200%;
+        background-position: right;
+        transition: background-position 0.2s;
+    }
+    .main__section1__reserva:hover {
+        background-position: left;
+        font-weight: 700;
+    }
+    .main__video {
+        width: 100vw;
+        height: auto;
+        padding-bottom: 5vh;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        z-index: -1;
+    }
+    .main__section2 {
+        width: 100vw;
+        height: auto;
+        grid-area: section2;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image: linear-gradient(black, rgb(51, 50, 50));
+        overflow: hidden;
+    }
+    .main__section2__titulo {
+        font-size: 3rem;
+        padding-top: 5vh;
+        font-family: 'Playfair Display', serif;
+    }
+    .main__section2__texto {
+        font-size: 1.5rem;
+        margin: 5px 8vw 20px 8vw;
+        font-family: 'Playfair', serif;
+    }
+    .main__section3 {
+        height: auto;
+        grid-area: section3;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image: url(../assets/images/inicio.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -100;
+    }
+    .main__section3__fondo {
+        background-color: rgba(0, 0, 0, 0.831);
+    }
+    .main__section3__2columnas {
+        display: flex;
+        justify-content: space-around;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "ubicacion servicio"   
+                            "calidad precio";
+    }
+    .main__section3__2columnas__subtitulo {
+        font-size: 3rem;
+        padding-top: 5vh;
+        font-family: 'Playfair Display', serif;
+    }
+    .main__section3__texto__columnas {
+        margin-left: 50px;
+        margin-right: 10vw;
+        margin-bottom: 5vh;
+        font-size: 1.5rem;
+        color: bisque;
+        font-family: 'Playfair', serif;
+    }
+    .main__section3__2columnas__ubicacion {
+        grid-area: ubicacion;
+        margin-top: 30px;
+    }
+    .main__section3__2columnas__servicio {	
+        grid-area: servicio;
+        margin-top: 30px;
+    }
+    .main__section3__2columnas__garantia {
+        grid-area: calidad;
+        margin-top: 30px;
+    }
+    .main__section3__2columnas__precio {
+        grid-area: precio;
+        margin-top: 30px;
+    }
+    .main__imagenes {
+        width: 200px;
+        height: 200px;
+    }
+    footer {
+        width: 100vw;
+        height: 10vh;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: footer;
+        background-color: black;
+        
+    }
+    .footer__red {
+        height: 30px;
+        width: 30px;
+    }
 
-@media only screen and (max-width: 768px) {
+    /* HABITACIONES */
+    .habit__main__titulo {
+        font-size: 4rem;
+        font-family: 'Playfair Display', serif;
+    }
+    .habit__main__descripcion {
+        font-size: 2rem;
+        font-family: 'Playfair', serif;
+    }
+    .habit__main {
+        background-image: linear-gradient(black, rgb(51, 50, 50));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .imagen_habit {
+        width: 600px;
+        height: 300px;
+    }
 
-}
 
-@media only screen and (max-width: 480px) {
 
-}
+    /* DESKTOP FIRST */
+
+
+    @media only screen and (max-width: 1200px) {
+
+    }
+
+    @media only screen and (max-width: 768px) {
+
+    }
+
+    @media only screen and (max-width: 480px) {
+
+    }

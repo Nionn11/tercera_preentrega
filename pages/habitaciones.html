@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="./assets/favicon.png-">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="shortcut icon" href="../assets/favicon.png">
     <title>El Paraiso - Habitaciones</title>
 </head>
 <body>
-        <header>
-            <a href="./index.html"><img src="./assets/images/Logo.png" alt=""></a>
-            <h1>Hoteles el Paraiso</h1>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/habitaciones.html">HABITACIONES</a></li>
-                <li><a href="../pages/restaurante.html">RESTAURANTE</a></li>
-                <li><a href="../pages/actividades.html">ACTIVIDADES</a></li>
-                <li><a href="#contactos">CONTÁCTANOS</a></li>
-                <li><a href="../pages/reserva.html">RESERVA</a></li>
-            </ul>
-        </header>
+    <header class="header">
+        <a href="../index.html"><img src="../assets/images/Logo.png" alt="" class="header__logo"></a>
+        <ul>
+            <li><a class="header__link" href="../index.html">INICIO</a></li>
+            <li><a class="header__link" href="../pages/habitaciones.html">HABITACIONES</a></li>
+            <li><a class="header__link" href="../pages/restaurante.html">RESTAURANTE</a></li>
+            <li><a class="header__link" href="../pages/actividades.html">ACTIVIDADES</a></li>
+            <li><a class="header__link" href="#contactos">CONTÁCTANOS</a></li>
+            <li><a class="header__link" href="../pages/reserva.html">RESERVA</a></li>
+        </ul>
+    </header>
 
-        <main>
-            <h1>HABITACIONES</h1>
-            <p>Contamos con una amplia gama de habitaciones para que puedas disfrutar al máximo tu estadia</p>
+        <main class="habit__main">
+            <h1 class="habit__main__titulo">HABITACIONES</h1>
+            <p class="habit__main__descripcion">Contamos con una amplia gama de habitaciones para que puedas disfrutar al máximo tu estadia</p>
             <div>
-                <img src="../assets/images/Habitacion_ciudad.jpg" alt="">
-                <p>¿Vienes por trabajo o visita en una gran ciudad y quieres estar lo más comodo posible?. Te recomendamos las sucursales "City Villa". Estas sucursales están ubicadas en un punto estrategico de las ciudades para que puedas recorrerlas como mas te guste; además cuenta con centro de recreación y piscina interna para una experiencia mas privada. El "City Villa" cuenta con WIFI y TV gratis, desayuno tipo buffet, gimnasio y piscina interna, sala de juegos, sala de conferencias, bar, restaurante propio, actividades recreativas y mucho más</p>
-            </div>
-            <div>
-                <img src="../assets/images/Habitacion_playa.jpg" alt="">
-                <p>¿Quieres salir, divertirte, refrescarte y tomar algo?. Te recomendamos las sucursales "Beach Villa". Estas sucursales, ubicadas frente a las playas, ofrecen una amplia gama de actividades en la playa y descuentos en los bares cercanos. El "Beach Villa" cuenta con WIFI y TV gratis, desayuno tipo buffet, gimnasio y piscina interna, sala de juegos, sala de conferencias, bar, restaurante propio, actividades recreativas y mucho más </p>
-            </div>
-            <div>
-                <img src="../assets/images/Habitacion_montañas.jpg" alt="">
-                <p>¿Quieres despejarte de todo y tener una experiencia más intima?. Te recomendamos las sucursales "Mountain Villa". Estas sucursales se ubican en cerros, a las afueras de las grandes ciudades, ofreciendo tanto cabañas individuales como un hotel principal. En el "Mountain Villa" cabaña cuenta con un jacuzzi privado, WIFI y TV gratis; los usuarios de las cabañas pueden acercarse al hotel principal para disfrutar los demás beneficios que ofrecemos, como desayuno tipo buffet, gimnasio y piscina interna, sala de juegos, sala de conferencias, bar, restaurante propio, actividades recreativas y mucho más</p>
+                <section class="habit__section1" data-aos="flip-up">
+                    <h2 class="main__section2__titulo ">CITY VILLA</h2>
+                    <img class="imagen_habit" src="../assets/images/Habitacion_ciudad.jpg" alt="">
+                    <p class="main__section2__texto">¿Vienes por trabajo o visita en una gran ciudad y quieres estar lo más comodo posible?. Te recomendamos las sucursales "City Villa". Estas sucursales están ubicadas en un punto estrategico de las ciudades para que puedas recorrerlas como mas te guste; además cuenta con centro de recreación y piscina interna para una experiencia mas privada. El "City Villa" cuenta con WIFI y TV gratis, desayuno tipo buffet, gimnasio y piscina interna, sala de juegos, sala de conferencias, bar, restaurante propio, actividades recreativas y mucho más</p>
+                </section>
+                
+                <section class="habit__section2" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <h2 class="main__section2__titulo ">BEACH VILLA</h2>
+                    <img class="imagen_habit" src="../assets/images/Habitacion_playa.jpg" alt="">
+                    <p  class="main__section2__texto">¿Quieres salir, divertirte, refrescarte y tomar algo?. Te recomendamos las sucursales "Beach Villa". Estas sucursales, ubicadas frente a las playas, ofrecen una amplia gama de actividades en la playa y descuentos en los bares cercanos. El "Beach Villa" cuenta con WIFI y TV gratis, desayuno tipo buffet, gimnasio y piscina interna, sala de juegos, sala de conferencias, bar, restaurante propio, actividades recreativas y mucho más </p>
+                </section>
+                
+                <section class="habit__section3" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <h2 class="main__section2__titulo ">MOUNTAIN VILLA</h2>
+                    <img class="imagen_habit" src="../assets/images/Habitacion_montañas.jpg" alt="">
+                    <p  class="main__section2__texto">¿Quieres despejarte de todo y tener una experiencia más intima?. Te recomendamos las sucursales "Mountain Villa". Estas sucursales se ubican en cerros, a las afueras de las grandes ciudades, ofreciendo tanto cabañas individuales como un hotel principal. En el "Mountain Villa" cabaña cuenta con un jacuzzi privado, WIFI y TV gratis; los usuarios de las cabañas pueden acercarse al hotel principal para disfrutar los demás beneficios que ofrecemos, como desayuno tipo buffet, gimnasio y piscina interna, sala de juegos, sala de conferencias, bar, restaurante propio, actividades recreativas y mucho más</p>
+                </section>
             </div>
         </main>
 
-        <footer clas="footer">
-            <p id="contactos">Contactenos a través de:</p>
-            <div>
-                <a href="https://www.facebook.com/"> <img src="./assets/images/facebook.png" alt="" class="footer__red"></a>
-                <a href="https://twitter.com/"><img src="./assets/images/twitter.png" alt="" class="footer__red"></a>
-                <a href="https://www.instagram.com/"><img src="./assets/images/instagram.png" alt="" class="footer__red"></a>  
-            </div>
-            <div>
-                <span>Telefono: +549 - 12345678</span>
-                <span>Correo: hotelelparaiso@gmail.com</span>  
-            </div>            
-        </footer>
+    <footer clas="footer">
+        <p id="contactos">Contactenos a través de:</p>
+        <div>
+            <a href="https://www.facebook.com/"> <img src="../assets/images/facebook.png" alt="" class="footer__red"></a>
+            <a href="https://twitter.com/"><img src="../assets/images/twitter.png" alt="" class="footer__red"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="" class="footer__red"></a>  
+        </div>
+            <div>Telefono: +549 - 12345678</div>
+            <div>Correo: hotelelparaiso@gmail.com</div>             
+    </footer>
     
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
