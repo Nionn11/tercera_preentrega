@@ -3,6 +3,9 @@
         margin: 0;
         box-sizing: border-box;
     }
+    
+    /* GENERAL E INDEX */
+
     body {
         width: 100vw;
         color: bisque;
@@ -34,7 +37,7 @@
         margin-right: 200px;
     }
     ul {
-        color: white;
+        color: white;   
         list-style: none;
         text-decoration: none;
     }
@@ -213,28 +216,81 @@
     }
 
     /* HABITACIONES */
+    .habit__main {
+        display: grid;
+        grid-template-rows: 80vh auto auto auto;
+        grid-template-areas: "section1"
+                             "section2"
+                             "section3"
+                             "section4";
+    }
+    .main_fondo {
+        background-image: linear-gradient(black, rgb(51, 50, 50));
+    }
+    .habit__section1 {
+        grid-area: section1;
+    }
+    .habit__section2 {
+        margin: 50px;
+        grid-area: section2;
+    }
+    .habit__section3 {
+        margin: 50px;
+        grid-area: section3;
+    }
+    .habit__section4 {
+        margin: 50px;
+        grid-area: section4;
+    }
+    .habit__section1 {
+        height: 80vh;
+        width: 100vw;
+        background-image: url(../assets/images/habitacion_fondo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .habit__section1__fondo {
+        height: 80vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.619);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-area: section1;
+    }
     .habit__main__titulo {
         font-size: 4rem;
         font-family: 'Playfair Display', serif;
+        margin-bottom: 50px;
     }
     .habit__main__descripcion {
         font-size: 2rem;
         font-family: 'Playfair', serif;
     }
-    .habit__main {
-        background-image: linear-gradient(black, rgb(51, 50, 50));
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
     .imagen_habit {
         width: 600px;
         height: 300px;
     }
-
-
+    .habit__section__fondo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid bisque;
+        background-image: linear-gradient(#DBD3D0, #BAC2DB);
+        color: black;
+    }
+    .main__section__texto {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.3rem;
+        font-family: 'Playfair', serif;
+    }
+    .reserva_habit {
+        display: flex;
+        justify-content: center;
+    }
 
     /* DESKTOP FIRST */
 
