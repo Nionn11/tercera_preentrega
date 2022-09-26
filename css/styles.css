@@ -172,7 +172,7 @@
     }
     .main__section3__texto__columnas {
         margin-left: 50px;
-        margin-right: 10vw;
+        margin-right: 50px;
         margin-bottom: 5vh;
         font-size: 1.5rem;
         color: bisque;
@@ -254,6 +254,7 @@
         height: 80vh;
         width: 100vw;
         background-color: rgba(0, 0, 0, 0.619);
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -263,11 +264,16 @@
     .habit__main__titulo {
         font-size: 4rem;
         font-family: 'Playfair Display', serif;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .habit__main__descripcion {
         font-size: 2rem;
         font-family: 'Playfair', serif;
+    }
+    .habit__main__subtitulo {
+        font-size: 2rem;
+        font-family: 'Playfair', serif;
+        text-align: center;
     }
     .imagen_habit {
         width: 600px;
@@ -295,14 +301,303 @@
     /* DESKTOP FIRST */
 
 
-    @media only screen and (max-width: 1200px) {
-
+@media only screen and (max-width: 1200px) {
+       
+        /* GENERAL E INDEX */
+    .header__logo {
+        margin-left: 200px;
+    }
+    li {
+        margin: 2px;
+    }   
+    .main__section1__titulo {
+        font-size: 4rem;
+        margin: 10px;
+        letter-spacing: 3vw;
+    }
+    .main__section1__reserva {
+        font-size: 3rem;
+    }
+    .main__section2__titulo {
+        font-size: 2.5rem;
+        padding-top: 10px;
+    }
+    .main__section2__texto {
+        font-size: 1.3rem;
+        margin: 10px 30px 30px 30px;
+    }
+    .main__section3__2columnas__subtitulo {
+        font-size: 2.5rem;
+        padding-top: 30px;
+    }
+    .main__imagenes {
+        width: 150px;
+        height: 150px;
+    }
+    footer {
+        font-size: 1.3rem;   
     }
 
-    @media only screen and (max-width: 768px) {
-
+    /* HABITACIONES */
+    .habit__section2 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__section3 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__section4 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__main__titulo {
+        font-size: 4rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 50px;
     }
 
-    @media only screen and (max-width: 480px) {
-
+    .imagen_habit {
+        width: 600px;
+        height: 300px;
     }
+    .habit__section__fondo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid bisque;
+        background-image: linear-gradient(#DBD3D0, #BAC2DB);
+        color: black;
+    }
+    .main__section__texto {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.3rem;
+        font-family: 'Playfair', serif;
+    }
+    .reserva_habit {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .header__logo {
+        margin-left: 100px;
+    }
+    li {
+        margin: 2px;
+    }   
+    .main__section1__titulo {
+        font-size: 3.5rem;
+        margin: 10px;
+        letter-spacing: 3vw;
+    }
+    .main__section1__reserva {
+        font-size: 2.5rem;
+    }
+    .main__section2__titulo {
+        font-size: 2.5rem;
+        padding-top: 10px;
+    }
+    .main__section2__texto {
+        font-size: 1.3rem;
+        margin: 10px 30px 30px 30px;
+    }
+    .main__section3__2columnas__subtitulo {
+        font-size: 2.5rem;
+        padding-top: 30px;
+    }
+    .main__imagenes {
+        width: 150px;
+        height: 150px;
+    }
+    footer {
+        font-size: 1rem;   
+    }
+
+    /* HABITACIONES */
+    .habit__main {
+        display: grid;
+        grid-template-rows: 80vh auto auto auto;
+        grid-template-areas: "section1"
+                             "section2"
+                             "section3"
+                             "section4";
+    }
+    .habit__section2 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__section3 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__section4 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__main__titulo {
+        font-size: 4rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 50px;
+    }
+
+    .imagen_habit {
+        width: 600px;
+        height: 300px;
+    }
+    .habit__section__fondo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid bisque;
+        background-image: linear-gradient(#DBD3D0, #BAC2DB);
+        color: black;
+    }
+    .main__section__texto {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.3rem;
+        font-family: 'Playfair', serif;
+    }
+    .reserva_habit {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        grid-template-rows: 15vh auto 10vh;
+    }
+    .header {
+        font-size: 0.8rem;
+    }
+    .header__logo {
+        width: 35px;
+        height: 35px;
+        margin-right: 50px;
+    }
+    ul {
+        color: white;   
+        list-style: none;
+        text-decoration: none;
+    }
+    .header__link {
+        color: bisque;
+        text-decoration: none;
+        font-family: 'Playfair', serif;
+    }
+    li {
+        margin: 2px;
+    }   
+    .main__section1 {
+        height: 40vh;
+    }
+    .main__section1__titulo {
+        font-size: 2rem;
+        margin: 10px;
+        letter-spacing: 3vw;
+    }
+    .main__section1__eslogan {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    .main__section1__reserva {
+        font-size: 1.5rem;
+        margin: 20px;
+        padding: 0;
+    }
+    .main__section2__titulo {
+        font-size: 1.7rem;
+        padding-top: 10px;
+    }
+    .main__section2__texto {
+        font-size: 1.1rem;
+        margin: 10px 30px 30px 30px;
+    }
+    .main__section3__2columnas__subtitulo {
+        font-size: 1.7rem;
+        padding-top: 30px;
+    }
+    .main__section3__texto__columnas {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 2vh;
+        font-size: 1.1rem;
+    }
+    .main__imagenes {
+        width: 100px;
+        height: 100px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1rem;   
+    }
+    .footer__red {
+        height: 20px;
+        width: 20px;
+    }
+
+    /* HABITACIONES */
+    .habit__main {
+        grid-template-rows: 70vh auto auto auto;
+    }
+    .habit__section1 {
+        height: 70vh;
+    }
+    .habit__section1__fondo {
+        height: 70vh;
+    }
+    .habit__section2 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__section3 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__section4 {
+        margin: 50px;
+        text-align: center;
+    }
+    .habit__main__titulo {
+        font-size: 2.2rem;
+        letter-spacing: 0.8rem;
+        margin-bottom: 20px;
+    }
+    .habit__main__descripcion {
+        font-size: 1.4rem;
+    }
+    .imagen_habit {
+        width: 400px;
+        height: 200px;
+    }
+    .habit__section__fondo {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid bisque;
+        background-image: linear-gradient(#DBD3D0, #BAC2DB);
+        color: black;
+    }
+    .main__section__texto {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.1rem;
+        font-family: 'Playfair', serif;
+    }
+    .reserva_habit {
+        display: flex;
+        justify-content: center;
+    }
+}
