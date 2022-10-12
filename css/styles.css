@@ -68,7 +68,7 @@ li a:hover{
 }
 .checkbtn{
     font-size: 30px;
-    color: #bisque;
+    color: bisque;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -80,6 +80,7 @@ li a:hover{
 }
 /* MAIN */
 main {
+    overflow-x: hidden;
     grid-area: main;
     grid-template-rows: auto auto;
     grid-template-areas: "section1"
@@ -88,7 +89,7 @@ main {
 }
 /* INDEX MAIN SECCION 1 */
 .main__section1 {
-    height: 80vh;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -214,6 +215,14 @@ main {
     width: 200px;
     height: 200px;
 }
+
+.section__video{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
 /* FOOTER */
 footer {
     width: 100vw;
@@ -390,12 +399,18 @@ footer {
     /* MAIN */
     /* INDEX MAIN SECCION 1 */
     .main__section1__titulo {
-        font-size: 3.5rem;
-        letter-spacing: 3vw;
-        margin: 10px;
+        font-size: 2.3rem;
+        margin: 0px;
+    }
+    .main__section1__eslogan {
+        font-size: 1rem;
+        font-family: 'Playfair', serif;
+        margin: 5px;
     }
     .main__section1__reserva {
-        font-size: 2.5rem;
+        font-size: 1.3rem;
+        margin: 5px;
+        padding: 0;
     }
     /* INDEX MAIN SECCION 2 */ 
     .main__section2__titulo {
@@ -407,9 +422,25 @@ footer {
         margin: 10px 30px 30px 30px;
     }
     /* INDEX MAIN SECCION 3 */
+    .main__section3__2columnas {
+        display: flex;
+        justify-content: space-around;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas: "ubicacion" 
+                             "servicio"   
+                             "calidad"
+                             "precio";
+    }
+    .main__section3__texto__columnas {
+        margin: 50px; 
+    }
     .main__section3__2columnas__subtitulo {
         font-size: 2.5rem;
         padding-top: 30px;
+        display: flex;
+        flex-direction: column;
     }
     .main__imagenes {
         width: 150px;
@@ -503,24 +534,11 @@ footer {
     }   
     /* MAIN */
     /* INDEX MAIN SECCION 1 */
-    .main__section1 {
-        height: 40vh;
+    .main__section1__titulo {
+        font-size: 2.3rem;
+        margin: 0px;
     }
-    .habit__main__section1__titulo {
-        font-size: 1.7rem;
-        letter-spacing: 2vw;
-        margin: 10px;
-    }
-    .habit__main__section1_descripcion {
-        font-size: 1rem;
-        margin: 0;
-        padding: 0;
-    }
-    .main__section1__reserva {
-        font-size: 1.2rem;
-        margin: 20px;
-        padding: 0;
-    }
+    
     /* INDEX MAIN SECCION 2 */
     .main__section2__titulo {
         font-size: 1.7rem;
@@ -558,6 +576,21 @@ footer {
 
     /* HABITACIONES */
     /* MAIN */
+    .habit__main__section1__titulo {
+        font-size: 1.7rem;
+        letter-spacing: 2vw;
+        margin: 10px;
+    }
+    .habit__main__section1_descripcion {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    .main__section1__reserva {
+        font-size: 1.2rem;
+        margin: 20px;
+        padding: 0;
+    }
     .habit__section1 {
         height: 70vh;
     }
