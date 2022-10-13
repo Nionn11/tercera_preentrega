@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="./assets/favicon.png-">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/favicon.png">
     <link rel="stylesheet" href="../css/styles.css">
     <title>El Paraiso - Actividades</title>
@@ -12,77 +18,116 @@
 
 <body>
 
-    <header class="header">
-        <a href="../index.html"><img src="../assets/images/Logo.png" alt="" class="header__logo"></a>
-        <ul>
-            <li><a class="header__link" href="../index.html">INICIO</a></li>
-            <li><a class="header__link" href="../pages/habitaciones.html">HABITACIONES</a></li>
-            <li><a class="header__link" href="../pages/restaurante.html">RESTAURANTE</a></li>
-            <li><a class="header__link" href="../pages/actividades.html">ACTIVIDADES</a></li>
-            <li><a class="header__link" href="#contactos">CONTÁCTANOS</a></li>
-            <li><a class="header__link" href="../pages/reserva.html">RESERVA</a></li>
-        </ul>
+    <header>
+        <nav>
+            <a href="" class="enlace">
+                <img src="../assets/images/Logo.png" alt="" class="logo">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul class="header">
+                <li><a class="active" href="../index.html">INICIO</a></li>
+                <li><a href="./habitaciones.html">HABITACIONES</a></li>
+                <li><a href="./restaurante.html">RESTAURANTE</a></li>
+                <li><a href="./actividades.html">ACTIVIDADES</a></li>
+                <li class="desactivar"><a href="#contactos">CONTÁCTANOS</a></li>
+                <li><a href="./reserva.html">RESERVA</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- HAY HACER MENU DESPLEGABLE E INSERTAR IMAGENES -->
-    
-    <main>
-        <h1>ACTIVIDADES</h1>
-        <div>
-            <!-- <img src="../assets/images/Actividades_panoramica.jpg" alt=""> -->
-        </div>
-        <p>
-            Si quieres tener una experiencia mucho más inmersiva te recomendamos nuestra guia de actividaes. Además tenemos actividades exclusivas para cada tipo de sucursal
-        </p>
+    <main class="main__act">
+        <section id="section1__descripcion">
+            <div class="sombreado">
+                <h1 class="titulo__act">HABITACIONES</h1>
+                <p class="slogan__act">Contamos con una amplia gama de habitaciones para que puedas disfrutar al máximo tu estadia</p>
+            </div>
+        </section>
         
-        <h2>GUIA GENERAL DE ACTIVIDADES</h2>
-        <div>Todos nuestras sucursales cuentan con estas actividades en común
-            <ul>
-                <li>Excursiones a sitios de interes</li>
-                <li>Instructor de yoga todas las mañanas y tardes</li>
-                <li>Instructor de gimnasio todas las mañanas y tardes</li>
-                <li>Desayuno estilo buffet</li>
-                <li>Cena en el interior del hotel</li>
-                <li>Bar con DJ</li>
-            </ul>
-        </div>
-
-        <h3>ACTIVIDDADES EXCLUSIVAS</h3>
-        <div>Cada sucursal cuenta con actividades exclusivas para que puedas tener una experiencia más personalizada</div>
-        <div>
-            Actividades de City Villa:
-            <ul>
-                <li>Cenas exclusivas en el restaurante</li>
-                <li>Mapa con sitios de interes y descuestos en los mismos</li>
-                <li>Gimnasio abierto las 24 horas</li>
-            </ul>
-            <!-- <img src="../assets/images/Turismo_urbano.jpg" alt=""> -->
-        </div>
-
-        <div>
-            Actividades de Beach Villa:
-            <ul>
-                <li>Cenas exclusivas en el restaurante y en la playa privada del hotel</li>
-                <li>Mapa con bares recomendados y descuestos en los mismos</li>
-                <li>Gimnasio abierto las 24 horas</li>
-                <li>Fiesta exclusiva en la playa privada del hotel</li>
-                <li>Profesor de surfeo y alquiler de tablas para surfear gratuitas</li>
-            </ul>
-            <!-- <img src="../assets/images/Fiesta_playa.jpg" alt=""> -->
-        </div>
-
-        <div>
-            Actividades de Mountain Villa:
-            <ul>
-                <li>Cenas exclusivas en el restaurante</li>
-                <li>Mapa con sitios de interes y descuestos en los mismos</li>
-                <li>Excursiones programadas todos los dias</li>
-                <li>Tirolesa y puentismo</li>
-                <li>Observatorio todas las noches</li>
-            </ul>
-            <!-- <img src="../assets/images/Excursion.jpg" alt=""> -->
-        </div>
-
+        <section id="section2__cartas">
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/Imagenes_actividades/img1.jpg" alt="">
+                    <h3>General</h3>
+                </div>
+                <div class="face back">
+                    <h4>Actividades generales</h4>
+                    <ul>
+                        <li>Excursiones a sitios de interes</li>
+                        <li>Instructor de yoga todas las mañanas y tardes</li>
+                        <li>Instructor de gimnasio todas las mañanas y tardes</li>
+                        <li>Desayuno estilo buffet</li>
+                        <li>Cena en el interior del hotel</li>
+                        <li>Bar con DJ</li>
+                    </ul>
+                    <div class="link">
+                        <a href="#">Reseva ahora</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/Imagenes_actividades/img2.jpg" alt="">
+                    <h3>City Villa</h3>
+                </div>
+                <div class="face back">
+                    <h4>Actividades exclusivas</h4>
+                    <ul>
+                        <li>Cenas exclusivas en el restaurante</li>
+                        <li>Mapa con sitios de interes y descuestos en los mismos</li>
+                        <li>Gimnasio abierto las 24 horas</li>
+                    </ul>
+                    <div class="link">
+                        <a href="#">Reseva ahora</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/Imagenes_actividades/img3.jpg" alt="">
+                    <h3>Beach Villa</h3>
+                </div>
+                <div class="face back">
+                    <h4>Actividades exclusivas</h4>
+                        <ul>
+                            <li>Cenas exclusivas en el restaurante y en la playa privada del hotel</li>
+                            <li>Mapa con bares recomendados y descuestos en los mismos</li>
+                            <li>Gimnasio abierto las 24 horas</li>
+                            <li>Fiesta exclusiva en la playa privada del hotel</li>
+                            <li>Profesor de surfeo y alquiler de tablas para surfear gratuitas</li>
+                        </ul>
+                    <div class="link">
+                        <a href="#">Reseva ahora</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/Imagenes_actividades/img4.jpg" alt="">
+                    <h3>Mountain Villa</h3>
+                </div>
+                <div class="face back">
+                    <h4>Actividades exclusivas</h4>
+                    <ul>
+                        <li>Cenas exclusivas en el restaurante</li>
+                        <li>Mapa con sitios de interes y descuestos en los mismos</li>
+                        <li>Excursiones programadas todos los dias</li>
+                        <li>Tirolesa y puentismo</li>
+                        <li>Observatorio todas las noches</li>
+                    </ul>
+                    <div class="link">
+                        <a href="#">Reseva ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer clas="footer">

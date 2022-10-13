@@ -1,0 +1,4 @@
+Hola Martín, mucho gusto.
+Disculpa por esta entrega incompleta, hice lo que pude ya que tenia muchos finales este mes.
+Todavia no se usar SCSS, pero voy a ir practicando, me faltan corregir varios errores todavia, pero en el transcurso de la corrección y, seguramente, de la reentrega, estaría terminando bien la pagina
+Muchisimas gracias por las correcciones de los anteriores dos trabajos, me re sirvieron
