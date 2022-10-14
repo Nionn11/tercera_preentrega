@@ -357,6 +357,10 @@ footer {
     footer {
         font-size: 1.3rem;   
     }
+    .footer__red {
+        height: 20px;
+        width: 20px;
+    }
     /* HABITACIONES */
     /* MAIN */
     .habit__section {
@@ -451,6 +455,7 @@ footer {
     footer {
         font-size: 1rem;   
     }
+    
     /* HABITACIONES */
     /* MAIN */
 
@@ -484,7 +489,7 @@ footer {
         justify-content: center;
     }
 }
-@media only screen and (max-width: 625px){
+@media only screen and (max-width: 660px){
     .checkbtn{
         display: block;
     }
@@ -518,6 +523,7 @@ footer {
     .desactivar {
         display: none;
     }
+
 }
 /* CELULAR */
 @media only screen and (max-width: 490px) {
@@ -573,10 +579,7 @@ footer {
         flex-wrap: wrap;
         font-size: 1rem;   
     }
-    .footer__red {
-        height: 20px;
-        width: 20px;
-    }
+    
 
     /* HABITACIONES */
     /* MAIN */
@@ -1046,4 +1049,45 @@ color: #fff;
 		grid-row: 0.8 1.5fr;
 		grid-template-areas: "section1" "section2";
 	}
+}
+
+
+/* RESERVA */
+.formulario {
+    font-size: 1.2rem;
+    width: 80%;
+    background: #1e242b;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: bisque;
+    box-shadow: 7px 13px 37px #000;
+}
+.formulario h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+.ingresar {
+ width: 100%;
+  background: #24303c;
+  padding: 1%;
+  border-radius: 4px;
+  margin-bottom: 2%;
+  border: 1px solid #9da6b9;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: bisque;
+}
+.boton {
+    width: 100%;
+    background: rgb(30, 102, 143);
+    border: none;
+    padding: 1.5%;
+    color: white;
+    margin: 1% 0;
+    font-size: 1.3rem;
+  }
+.ingresar:focus {
+    background: rgb(19, 97, 161);
 }

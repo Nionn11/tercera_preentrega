@@ -38,57 +38,56 @@
         </nav>
     </header>
 
-    <main>
-        <fieldset>
-            <legend>Realice su reserva</legend>
-        <form action="" method="get">
+    <main id="main__reserva">
 
+        <form action="" method="get" class="formulario">
+            <h4>Formulario reserva</h4>
             <div>
                 <label for="Nombre">Ingrese su nombre/s
-                    <input type="text" name="Nombre" value="" id="Nombre" required>  
+                    <input type="text" name="Nombre" value="" id="Nombre" required class="ingresar">  
                 </label> 
             </div>
 
             <div>
                 <label for="Apellido">Ingrese su apellido/s
-                    <input type="text" name="Apellido" value="" id="Apellido" required>
+                    <input type="text" name="Apellido" value="" id="Apellido" required class="ingresar">
                 </label>
             </div>
 
             <div>
                 <label for="Email">Correo electronico</label>
-                <input type="text" name="Email" value="" id="Email" required>
+                <input type="text" name="Email" value="" id="Email" required class="ingresar">
             </div>
 
             <div>
                 <label for="Telefono">Celular o telefono</label>
-                <input type="text" name="Telefono" value="" id="Telefono" required>
+                <input type="text" name="Telefono" value="" id="Telefono" required class="ingresar">
             </div>
 
             <div>
-                <select name="Sucursal" required>
+                <select name="Sucursal" required class="ingresar">
                     <option value="CV">City Villa</option>
                     <option value="BV">Beach Villa</option>
                     <option value="MV">Mountain Villa</option>
                 </select>
             </div>
 
-            <div>Reservar desde:
+            <div class="ingresar">Reservar desde:
                 <span>
-                    <input type="date">
+                    <input type="date" class="ingresar">
                 </span>
                 hasta:
                 <span> 
-                    <input type="date">
+                    <input type="date" class="ingresar">
                 </span>
             </div>
 
             <div>
-                <input type="submit" value="Reservar">
-                <input type="reset" value="Limpiar">
+                <input type="submit" value="Reservar" class="boton">
+                <input type="reset" value="Limpiar" class="boton">
             </div>
         </form>
-        </fieldset>
+
     </main>
 
     <footer clas="footer">
