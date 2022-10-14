@@ -779,16 +779,206 @@ ul li {
 
 
 /* RESTAURANTE */
+
+
+
+
 #main__restaurante {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgb(0, 0, 0))
+	height: 75vh;
+	display: grid;
+	grid-area: main;
+	grid-template-columns: 0.8fr 1.5fr;
+	grid-row: auto;
+	grid-template-areas: "section1 section2";
+	overflow: hidden;
 }
-ul.menu,
-ul.menu * {
-margin: 0;
-padding: 0;
-border: 0;
-box-sizing: border-box;
+
+#section1__menu {
+	grid-area: section1;
+	display: flex;
+	justify-items: flex-start;
+	background-color: #000;
 }
+#texto {
+	height: inherit;
+	width: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.671);
+	color: bisque;
+}
+.slider-container{
+	display: block;
+	width: 100%;
+	height: inherit;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;	
+	background-color: #000;
+}
+.slider-content{
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	grid-area: section2;
+	opacity: 0;
+	transition: opacity 0.7s;
+	overflow: hidden;
+	grid-area: section2;
+	opacity: 0;
+	transition: opacity 0.7s;
+
+}
+
+.slider-content:target {
+	opacity: 1;
+	transition: opacity 0.7s;
+}
+.slider-content:nth-child(1){
+	background-image: url('../assets/images/Imagenes_restaurante/slide1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(2){
+	background-image: url('../assets/images/Imagenes_restaurante/slide2.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(3){
+	background-image: url('../assets/images/Imagenes_restaurante/slide3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(4){
+	background-image: url('../assets/images/Imagenes_restaurante/slide4.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(5){
+	background-image: url('../assets/images/Imagenes_restaurante/slide5.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(6){
+	background-image: url('../assets/images/Imagenes_restaurante/slide6.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(7){
+	background-image: url('../assets/images/Imagenes_restaurante/slide7.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(8){
+	background-image: url('../assets/images/Imagenes_restaurante/slide8.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(9){
+	background-image: url('../assets/images/Imagenes_restaurante/slide9.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(10){
+	background-image: url('../assets/images/Imagenes_restaurante/slide10.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(11){
+	background-image: url('../assets/images/Imagenes_restaurante/slide11.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(12){
+	background-image: url('../assets/images/Imagenes_restaurante/slide12.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(13){
+	background-image: url('../assets/images/Imagenes_restaurante/slide13.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(14){
+	background-image: url('../assets/images/Imagenes_restaurante/slide14.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(15){
+	background-image: url('../assets/images/Imagenes_restaurante/slide15.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(16){
+	background-image: url('../assets/images/Imagenes_restaurante/slide16.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(17){
+	background-image: url('../assets/images/Imagenes_restaurante/slide17.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(18){
+	background-image: url('../assets/images/Imagenes_restaurante/slide18.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(19){
+	background-image: url('../assets/images/Imagenes_restaurante/slide19.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(20){
+	background-image: url('../assets/images/Imagenes_restaurante/slide20.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(21){
+	background-image: url('../assets/images/Imagenes_restaurante/slide21.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(22){
+	background-image: url('../assets/images/Imagenes_restaurante/slide22.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(23){
+	background-image: url('../assets/images/Imagenes_restaurante/slide23.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(24){
+	background-image: url('../assets/images/Imagenes_restaurante/slide24.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(25){
+	background-image: url('../assets/images/Imagenes_restaurante/slide25.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(26){
+	background-image: url('../assets/images/Imagenes_restaurante/slide26.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(27){
+	background-image: url('../assets/images/Imagenes_restaurante/slide27.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+
 ul.menu {
 text-align: center;
 margin: 10px auto;
@@ -796,9 +986,11 @@ padding: 0;
 list-style: none;
 width: 100%;
 font-size: 18px;
+
 }
 ul.menu li {
 list-style: none;
+
 }
 ul.menu li a {
 display: block;
@@ -817,6 +1009,7 @@ padding: 0;
 list-style: none;
 overflow: hidden;
 transition: .3s all ease-in;
+
 }
 ul.menu li li a {
 padding: 10px 10px 10px 40px;
@@ -825,9 +1018,11 @@ color: #000;
 font-size: 16px;
 border: 0;
 border-bottom: 1px solid #ccc;
+
 }
 ul.menu li li:last-child a {
 border-bottom: 0;
+
 }
 ul.menu li:target ul {
 max-height: 300px;
@@ -838,51 +1033,17 @@ background: #666;
 color: #fff;
 }
 
-#section2__slider__contenedor {
-  width: 100%;
-  height: 800px; 
-  /* HAY QUE CAMBIAR EL HEIGHT EN EL MEDIA QUERIE PARA QUE NO SALGAN ABAJO MAS IMAGENES */
-  margin: auto;
-  overflow: hidden;
-}
 
-ul.slider{
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  height: 2700%;
-}
 
-ul.slider li {
-    list-style: none;
-    width: 100%;
-    transition: opacity .5s;
-    background:#fff;
-}
-
-.imagen__contenedor {
-  width: 100vw;
-  margin-bottom: 100%;
-  
-}
-#menu__imagen {
-  width: inherit;
-}
-ul.slider li:target {
-    opacity: 1;
-}
-
-@media only screen and (max-width: 1200px) {
-  #section2__slider__contenedor {
-    height: 600px;
-  }
-     
-}
 
 @media only screen and (max-width: 768px) {
-
-}
-
-@media only screen and (max-width: 490px) {
-
+	.slider-container{
+		height: 80vh;
+	}
+	#main__restaurante {
+		height: auto;
+		grid-template-columns: auto;
+		grid-row: 0.8 1.5fr;
+		grid-template-areas: "section1" "section2";
+	}
 }
