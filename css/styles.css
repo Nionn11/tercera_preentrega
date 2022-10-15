@@ -787,19 +787,19 @@ ul li {
 
 
 #main__restaurante {
-	height: 75vh;
+	min-height: 75vh;
 	display: grid;
 	grid-area: main;
 	grid-template-columns: 0.8fr 1.5fr;
 	grid-row: auto;
 	grid-template-areas: "section1 section2";
-	overflow: hidden;
 }
 
 #section1__menu {
 	grid-area: section1;
 	display: flex;
-	justify-items: flex-start;
+	justify-items: center;
+    align-items: center;
 	background-color: #000;
 }
 #texto {
@@ -988,8 +988,7 @@ margin: 10px auto;
 padding: 0;
 list-style: none;
 width: 100%;
-font-size: 18px;
-
+font-size: 1rem;
 }
 ul.menu li {
 list-style: none;
@@ -997,7 +996,7 @@ list-style: none;
 }
 ul.menu li a {
 display: block;
-padding: 10px 10px 10px 20px;
+padding: 1%;
 background: black;
 color: bisque;
 border-bottom: 1px solid #000;
@@ -1015,7 +1014,7 @@ transition: .3s all ease-in;
 
 }
 ul.menu li li a {
-padding: 10px 10px 10px 40px;
+padding: 1.5%;
 background: #999;
 color: #000;
 font-size: 16px;
