@@ -10,9 +10,7 @@ body {
   color: bisque;
   display: grid;
   grid-template-rows: 15vh auto 10vh;
-  grid-template-areas: "header"
- "main"
- "footer";
+  grid-template-areas: "header" "main" "footer";
   overflow-x: hidden; }
 
 header {
@@ -73,9 +71,7 @@ header {
   display: grid;
   grid-area: main;
   grid-template-rows: auto auto;
-  grid-template-areas: "section1"
- "section2"
- "section3"; }
+  grid-template-areas: "section1" "section2" "section3"; }
   #main__index #main__section1 {
     height: auto;
     text-align: center;
@@ -179,8 +175,7 @@ header {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: 50% 50%;
-        grid-template-areas: "ubicacion servicio"   
- "garantia precio"; }
+        grid-template-areas: "ubicacion servicio"    "garantia precio"; }
         #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__ubicacion {
           margin-top: 30px;
           grid-area: ubicacion; }
