@@ -1,0 +1,62 @@
+header {
+    grid-area: header;
+    height: 15vh;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    grid-area: header;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        height: 15vh;
+        width: 100%;
+        .enlace {
+            padding: 20px 50px;
+            .logo {
+                height: 40px;
+            }
+        }
+        #check {
+            display: none;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: bisque;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        ul {
+            float: right;
+            margin-right: 20px;
+            
+            li {
+                display: inline-block;
+                line-height: 20px;
+                margin: 5px;
+                font-size: 1rem;
+                a{
+                    font-size: 1.2rem;
+                    color: bisque;                    
+                    padding: 1%;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
+                    background-size: 200%;
+                    background-position: right;
+                    transition: background-position 0.2s;
+                    &:hover {
+                        background-position: left;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

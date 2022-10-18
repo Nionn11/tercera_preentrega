@@ -1,0 +1,122 @@
+#main__act {
+    grid-area: main;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgb(0, 0, 0));
+    height: auto;
+    #section1__descripcion {
+        text-align: center;
+        height: 40vh;
+        background-image: url(../assets/images/Imagenes_actividades/Actividades_panoramica.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        color: bisque;
+        .sombreado {
+            height: 40vh;
+            background-color: rgba(0, 0, 0, 0.767);
+            z-index: 100;
+            .titulo__act {
+                font-size: 5rem; 
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 2vw;
+            }
+            .slogan__act {
+                font-size: 2rem;
+                font-family: 'Playfair', serif;
+                margin: 5px 5px 40px 5px;
+            }
+        }
+    }
+    #section2__cartas {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .card {
+            position: relative;
+            width: 300px;
+            height: 350px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+            &:hover .front {
+                transform: perspective(600px) rotateY(180deg);
+            }
+            &:hover .back {
+                transform: perspective(600px) rotateY(360deg);
+            }
+            .face {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+              }
+              .front {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000;
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                h3 {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 45px;
+                    line-height: 45px;
+                    color: bisque;
+                    background: rgba(0,0,0,.4);
+                    text-align: center
+                }
+                
+            }
+            .back {
+                transform: perspective(600px) rotateY(180deg);
+                background: rgb(15, 15, 15);
+                padding: 15px;
+                color: bisque;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                box-shadow: 0 5px 10px #000;
+                h4 {
+                    font-size: 1.7rem;
+                    padding: 5px;
+                    border-bottom: solid 1px #f3f3f3;
+                }
+                p {
+                    letter-spacing: 1px;
+                }
+               li {
+                margin: 2%;
+               }
+               .link {
+                border-top: solid 1px #f3f3f3;
+                height: 50px;
+                line-height: 50px;
+               }
+               a {
+                color: bisque;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
+                background-size: 200%;
+                background-position: right;
+                transition: background-position 0.2s;
+                &:hover {
+                    background-position: left;
+                    font-weight: 700;
+                }
+               }
+            }
+        }
+    }
+}

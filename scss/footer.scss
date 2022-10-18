@@ -1,0 +1,33 @@
+footer {
+    grid-area: footer;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: footer; 
+    div {
+        a {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        a {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        a {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+}
