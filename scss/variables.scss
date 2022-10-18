@@ -1,0 +1,14 @@
+$index: (
+    "ubicacion": ubicacion,
+    "servicio": servicio,
+    "precio": precio,
+    "garantia": garantia,
+);
+$direccion: (
+    "flecha": row,
+    "columna": column,
+);
+$espacios: (
+    "centro": center,
+    "entre": space-between,
+);

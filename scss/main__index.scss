@@ -12,9 +12,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        align-content: center;
         grid-area: section1;
         background-color: rgba(0, 0, 0, 0.631);
         .main__section1__titulo{
@@ -80,38 +78,12 @@
                 margin: 5px 8vw 20px 8vw;
             }
         }
-        div {
-            .main__section2__titulo {
-                font-size: 3rem;
-                font-family: 'Playfair Display', serif;
-                padding-top: 5vh;
-            }
-            .main__imagenes {
-                width: 200px;
-                height: 200px;
-            }
-            .main__section2__texto {
-                font-size: 1.5rem;
-                font-family: 'Playfair', serif;    
-                margin: 5px 8vw 20px 8vw;
-            }
-            .main__section2__texto {
-                font-size: 1.5rem;
-                font-family: 'Playfair', serif;    
-                margin: 5px 8vw 20px 8vw;
-            }
-        }
     }
     #main__section3 {
         height: auto;
         background-image: url(../assets/images/inicio.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        @include backgrounds;
+        @include flexbox (flecha, cetro);
         text-align: center;
         grid-area: section3;
         z-index: -100;
@@ -124,92 +96,23 @@
                 text-align: center;
             }
             .main__section3__2columnas {
-                display: flex;
-                justify-content: space-around;
+                @include flexbox (columna, entre);
                 display: grid;
                 grid-template-rows: auto auto;
                 grid-template-columns: 50% 50%;
                 grid-template-areas: "ubicacion servicio"   
                                     "garantia precio";
                 .main__section3__2columnas__ubicacion {
-                    margin-top: 30px;
-                    grid-area: ubicacion;
-                    .main__section3__2columnas__subtitulo{
-                        font-size: 3rem;
-                        font-family: 'Playfair Display', serif;
-                        padding-top: 5vh;
-                        padding-bottom: 30px;
-                    }
-                    .main__imagenes{
-                        width: 200px;
-                        height: 200px;
-                    }
-                    .main__section3__texto__columnas{
-                        color: bisque;
-                        font-size: 1.5rem;
-                        font-family: 'Playfair', serif;
-                        margin: 3%; 
-                    }
+                    @include index (ubicacion)
                 }
                 .main__section3__2columnas__servicio {
-                    margin-top: 30px;
-                    grid-area: servicio;
-                    .main__section3__2columnas__subtitulo{
-                        font-size: 3rem;
-                        font-family: 'Playfair Display', serif;
-                        padding-top: 5vh;
-                        padding-bottom: 30px;
-                    }
-                    .main__imagenes{
-                        width: 200px;
-                        height: 200px;
-                    }
-                    .main__section3__texto__columnas {
-                        color: bisque;
-                        font-size: 1.5rem;
-                        font-family: 'Playfair', serif;
-                        margin: 3%; 
-                    }
+                    @include index (servicio)
                 }
                 .main__section3__2columnas__garantia {
-                    margin-top: 30px;
-                    grid-area: garantia;
-                    .main__section3__2columnas__subtitulo {
-                        font-size: 3rem;
-                        font-family: 'Playfair Display', serif;
-                        padding-top: 5vh;
-                        padding-bottom: 30px;
-                    }
-                    .main__imagenes{
-                        width: 200px;
-                        height: 200px;
-                    }
-                    .main__section3__texto__columnas {
-                        color: bisque;
-                        font-size: 1.5rem;
-                        font-family: 'Playfair', serif;
-                        margin: 3%; 
-                    }
+                    @include index (garantia)
                 }
                 .main__section3__2columnas__precio {
-                    margin-top: 30px;
-                    grid-area: precio;
-                    .main__section3__2columnas__subtitulo {
-                        font-size: 3rem;
-                        font-family: 'Playfair Display', serif;
-                        padding-top: 5vh;
-                        padding-bottom: 30px;
-                    }
-                    .main__imagenes{
-                        width: 200px;
-                        height: 200px;
-                    }
-                    .main__section3__texto__columnas{
-                        color: bisque;
-                        font-size: 1.5rem;
-                        font-family: 'Playfair', serif;
-                        margin: 3%; 
-                    }
+                    @include index (precio)
                 }
             }
         }

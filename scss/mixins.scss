@@ -1,8 +1,35 @@
-@mixin centrar_todo {
+@mixin index ($index) {
+    margin-top: 30px;
+    grid-area: $index;
+    .main__section3__2columnas__subtitulo {
+        font-size: 3rem;
+        font-family: 'Playfair Display', serif;
+        padding-top: 5vh;
+        padding-bottom: 30px;
+    }
+    .main__imagenes{
+        width: 200px;
+        height: 200px;
+    }
+    .main__section3__texto__columnas{
+        color: bisque;
+        font-size: 1.5rem;
+        font-family: 'Playfair', serif;
+        margin: 3%; 
+        }
+}
+
+@mixin backgrounds {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin flexbox ($direccion, $espacios) {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: $direccion;
     align-items: center;
+    justify-items: center;
     align-content: center;
-    text-align: center;
+    justify-content: $espacios;
 }
