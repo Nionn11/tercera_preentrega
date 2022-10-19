@@ -102,14 +102,14 @@ header {
       #main__index #main__section1 .main__section1__reserva:hover {
         background-position: left;
         font-weight: 700; }
-  #main__index .main__video {
-    width: 100vw;
-    height: auto;
-    padding-bottom: 5vh;
-    position: absolute;
-    top: 15vh;
-    left: 0;
-    z-index: -1; }
+    #main__index #main__section1 .main__video {
+      width: 100%;
+      height: inherit;
+      padding-bottom: 5vh;
+      position: absolute;
+      top: 15vh;
+      left: 0;
+      z-index: -1; }
   #main__index #main__section2 {
     height: auto;
     text-align: center;
@@ -149,7 +149,7 @@ header {
     z-index: -100; }
     #main__index #main__section3 .main__section3__fondo {
       background-color: rgba(0, 0, 0, 0.85); }
-      #main__index #main__section3 .main__section3__fondo .main__section3__2columnas__subtitulo {
+      #main__index #main__section3 .main__section3__fondo .main__section3__2columnas__titulo {
         font-size: 4rem;
         font-family: 'Playfair Display', serif;
         padding-top: 10px;
@@ -328,7 +328,7 @@ header {
         list-style: none; }
         #main__restaurante #section1__menu ul li:target ul {
           max-height: 300px;
-          transition: .3s all ease-in; }
+          transition: .5s all ease-in; }
         #main__restaurante #section1__menu ul li a {
           display: block;
           padding: 1%;
@@ -347,7 +347,7 @@ header {
           padding: 0;
           list-style: none;
           overflow: hidden;
-          transition: .3s all ease-in; }
+          transition: .5s all ease-in; }
           #main__restaurante #section1__menu ul li ul li a {
             padding: 1.5%;
             background: #999;
@@ -363,7 +363,12 @@ header {
     padding: 0;
     overflow: hidden;
     position: relative;
-    background-color: #000; }
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
     #main__restaurante #slider-container div {
       display: flex;
       align-items: flex-end;
@@ -378,10 +383,10 @@ header {
       overflow: hidden;
       grid-area: section2;
       opacity: 0;
-      transition: opacity 0.7s; }
+      transition: opacity 0.5s; }
       #main__restaurante #slider-container div:target {
         opacity: 1;
-        transition: opacity 0.7s; }
+        transition: opacity 0.5s; }
       #main__restaurante #slider-container div p {
         height: inherit;
         width: inherit;
@@ -495,6 +500,14 @@ header {
       background-size: cover;
       background-position: center;
       background-image: url("../assets/images/Imagenes_restaurante/slide26.jpg"); }
+    #main__restaurante #slider-container .slider-content:nth-child(27) {
+      background-size: cover;
+      background-position: center;
+      background-image: url("../assets/images/Imagenes_restaurante/slide27.jpg"); }
+    #main__restaurante #slider-container .slider-content:nth-child(28) {
+      background-size: cover;
+      background-position: center;
+      background-image: url("../assets/images/Imagenes_restaurante/slide28.jpg"); }
 
 #main__act {
   grid-area: main;
@@ -665,8 +678,8 @@ footer {
   #main__index #main__section2 .main__section2__texto {
     font-size: 1.3rem;
     margin: 10px 30px 30px 30px; }
-  #main__index #main__section3 .main__section3__fondo .main__section3__2columnas__subtitulo {
-    font-size: 2.5rem;
+  #main__index #main__section3 .main__section3__fondo .main__section3__2columnas__titulo {
+    font-size: 4rem;
     padding-top: 30px; }
   #main__index #main__section3 .main__section3__fondo .main_imagenes {
     width: 150px;
@@ -698,7 +711,7 @@ footer {
   #main__act #section2__cartas .card .back li {
     font-size: 1.2rem; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 790px) {
   #main__index #main__section3 .main__section3__fondo .main__section3__2columnas {
     display: flex;
     justify-content: space-around;
@@ -706,6 +719,16 @@ footer {
     grid-template-rows: auto auto;
     grid-template-columns: auto auto auto auto;
     grid-template-areas: "ubicacion"  "servicio"    "garantia" "precio"; }
+  #main__restaurante {
+    height: auto;
+    grid-template-columns: auto;
+    grid-row: 0.8 1.5fr;
+    grid-template-areas: "section1" "section2"; }
+    #main__restaurante #slider-container {
+      height: 60vh;
+      justify-content: start; }
+      #main__restaurante #slider-container h1 {
+        margin-top: 25px; }
   footer {
     font-size: 1rem; } }
 
@@ -742,4 +765,91 @@ footer {
 
 @media only screen and (max-width: 490px) {
   header nav .enlace .logo {
-    margin-right: 50px; } }
+    padding: 0; }
+  #main__index #main__section1 .main__section1__titulo {
+    font-size: 2rem;
+    margin: 4px; }
+  #main__index #main__section1 .main__section1__eslogan {
+    font-size: 1rem;
+    margin: 2px; }
+  #main__index #main__section1 .main__section1__reserva {
+    font-size: 1.2rem;
+    margin: 4px; }
+  #main__index #main__section2 .main__section2__titulo {
+    font-size: 2rem; }
+  #main__index #main__section2 .main__imagenes {
+    width: 150px;
+    height: 150px; }
+  #main__index #main__section2 .main__section2__texto {
+    font-size: 1rem;
+    margin: 0; }
+  #main__index #main__section3 .main__section3__fondo {
+    background-color: rgba(0, 0, 0, 0.85); }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas__titulo {
+      font-size: 2rem; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__ubicacion .main__section3__2columnas__subtitulo {
+      font-size: 2rem; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__ubicacion .main__imagenes {
+      height: 150px;
+      width: 150px; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__ubicacion .main__section3__texto__columnas {
+      font-size: 1.2rem; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__servicio .main__section3__2columnas__subtitulo {
+      font-size: 2rem; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__servicio .main__imagenes {
+      height: 150px;
+      width: 150px; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__servicio .main__section3__texto__columnas {
+      font-size: 1.2rem; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__garantia .main__section3__2columnas__subtitulo {
+      font-size: 2rem; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__garantia .main__imagenes {
+      height: 150px;
+      width: 150px; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__garantia .main__section3__texto__columnas {
+      font-size: 1.2rem; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__precio .main__section3__2columnas__subtitulo {
+      font-size: 2rem; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__precio .main__imagenes {
+      height: 150px;
+      width: 150px; }
+    #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__precio .main__section3__texto__columnas {
+      font-size: 1.2rem; }
+  #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section1__titulo {
+    font-size: 1.7rem;
+    letter-spacing: 2vw;
+    margin: 10px; }
+  #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section__descripcion {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0; }
+  #main__habitaciones .main_fondo .habit__section {
+    margin: 2%; }
+    #main__habitaciones .main_fondo .habit__section .habit__main__subtitulo {
+      font-size: 2rem;
+      text-align: center; }
+    #main__habitaciones .main_fondo .habit__section .habit__section__fondo {
+      border: 2px solid bisque;
+      color: black;
+      margin-left: 10px;
+      margin-right: 10px; }
+      #main__habitaciones .main_fondo .habit__section .habit__section__fondo .imagen_habit {
+        max-width: 100%;
+        height: 200px; }
+      #main__habitaciones .main_fondo .habit__section .habit__section__fondo .main__section__texto {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.1rem; }
+  #main__habitaciones a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem; }
+  #main__act #section1__descripcion .sombreado .titulo__act {
+    font-size: 2rem; }
+  #main__act #section1__descripcion .sombreado .slogan__act {
+    font-size: 1rem;
+    margin: 10px; }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem; } }

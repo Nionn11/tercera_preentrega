@@ -41,16 +41,17 @@
                 font-weight: 700;
             }
         }
+        .main__video {
+            width: 100%;
+            height: inherit;
+            padding-bottom: 5vh;
+            position: absolute;
+            top: 15vh;
+            left: 0;
+            z-index: -1;
+        }
     }
-    .main__video {
-        width: 100vw;
-        height: auto;
-        padding-bottom: 5vh;
-        position: absolute;
-        top: 15vh;
-        left: 0;
-        z-index: -1;
-    }
+    
     #main__section2 {
         height: auto;
         text-align: center;
@@ -88,7 +89,7 @@
         z-index: -100;
         .main__section3__fondo {
             background-color: rgba(0, 0, 0, 0.850);
-            .main__section3__2columnas__subtitulo {
+            .main__section3__2columnas__titulo {
                 font-size: 4rem;
                 font-family: 'Playfair Display', serif;
                 padding-top: 10px;
