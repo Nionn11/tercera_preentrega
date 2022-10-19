@@ -1,0 +1,187 @@
+@media only screen and (max-width: 1200px) {
+    header {
+        li {
+            margin: 10px;
+        }
+    }
+    #main__index {
+        #main__section1 {
+            .main__section1__titulo{
+                font-size: map-get($map: $titulos, $key: "pc");
+                letter-spacing: 2vw;
+                margin: 10px;
+            }
+            .main__section1__reserva{
+                font-size: 3rem;
+                }
+            }
+        #main__section2 {
+                .main__section2__titulo {
+                    font-size: 2.5rem;
+                    padding-top: 10px;
+
+                }
+                .main__section2__texto {
+                    font-size: 1.3rem;
+                    margin: 10px 30px 30px 30px;
+                }
+        }
+        #main__section3 {
+            .main__section3__fondo {
+                .main__section3__2columnas__subtitulo {
+                    font-size: 2.5rem;
+                    padding-top: 30px;
+                }
+                .main_imagenes {
+                    width: 150px;
+                    height: 150px;              
+                }
+            }
+        }
+    }
+    #main__habitaciones {
+        .main_fondo {
+            .habit__section1 {
+                .habit__section1__fondo {
+                    .habit__main__section1__titulo {
+                        font-size: map-get($map: $titulos, $key: "pc");
+                    }
+                    .habit__main__section__descripcion{
+                        font-size: (map-get($map: $titulos, $key: "pc"))/3;
+                    }
+                }
+            }
+            .habit__section {
+                .habit__section__fondo {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    .imagen_habit {
+                        max-width: 100%;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        a {
+            font-size: 2.5rem;
+            margin: 5px;
+            padding: 0
+        }
+    }
+    footer {
+        font-size: 1.3rem;
+        div {
+            a {
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    #main__act {
+        #section1__descripcion {
+            .sombreado {
+                .titulo__act {
+                    font-size: map-get($map: $titulos, $key: "pc");
+                }
+                .slogan__act {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        #section2__cartas {
+            .card {
+                .back {
+                   li {
+                    font-size: 1.2rem;
+                   }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #main__index {
+        #main__section3 {
+            .main__section3__fondo {
+                .main__section3__2columnas {
+                    display: flex;
+                    justify-content: space-around;
+                    display: grid;
+                    grid-template-rows: auto auto;
+                    grid-template-columns: auto auto auto auto;
+                    grid-template-areas: "ubicacion" 
+                                        "servicio"   
+                                        "garantia"
+                                        "precio";
+                }
+            }
+        }
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    header {
+        nav {
+            .enlace {
+                .logo {
+                    padding-right: 100px;
+                }
+            }
+            #check {
+                &:checked ~ ul{
+                    left:0;
+                }
+            }
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                height: 100%;
+                background: #2c3e50;
+                top: 15vh;
+                left: -100%;
+                text-align: center;
+                transition: all 0.5s;
+                li{
+                    display: block;
+                    margin: 50px 0;
+                    margin: 5% 0;
+                    line-height: 30px;
+                    .active {
+                        background: none;
+                    }
+                    .desactivar {
+                        display: none;
+                    }
+                    a{
+                        font-size: 20px;
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 490px) {
+    header {
+        nav {
+            .enlace {
+                .logo {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}

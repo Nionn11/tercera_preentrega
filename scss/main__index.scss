@@ -42,7 +42,7 @@
             }
         }
     }
-    video {
+    .main__video {
         width: 100vw;
         height: auto;
         padding-bottom: 5vh;
@@ -62,11 +62,10 @@
         align-content: center;
         grid-area: section2;
         overflow: hidden;
-        div {
             .main__section2__titulo {
                 font-size: 3rem;
                 font-family: 'Playfair Display', serif;
-                padding-top: 5vh;
+                padding-top: 20px;
             }
             .main__imagenes {
                 width: 200px;
@@ -77,8 +76,8 @@
                 font-family: 'Playfair', serif;    
                 margin: 5px 8vw 20px 8vw;
             }
-        }
     }
+    
     #main__section3 {
         height: auto;
         background-image: url(../assets/images/inicio.jpg);
@@ -92,7 +91,7 @@
             .main__section3__2columnas__subtitulo {
                 font-size: 4rem;
                 font-family: 'Playfair Display', serif;
-                padding-top: 2.5%;
+                padding-top: 10px;
                 text-align: center;
             }
             .main__section3__2columnas {

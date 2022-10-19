@@ -102,7 +102,7 @@ header {
       #main__index #main__section1 .main__section1__reserva:hover {
         background-position: left;
         font-weight: 700; }
-  #main__index video {
+  #main__index .main__video {
     width: 100vw;
     height: auto;
     padding-bottom: 5vh;
@@ -121,14 +121,14 @@ header {
     align-content: center;
     grid-area: section2;
     overflow: hidden; }
-    #main__index #main__section2 div .main__section2__titulo {
+    #main__index #main__section2 .main__section2__titulo {
       font-size: 3rem;
       font-family: 'Playfair Display', serif;
-      padding-top: 5vh; }
-    #main__index #main__section2 div .main__imagenes {
+      padding-top: 20px; }
+    #main__index #main__section2 .main__imagenes {
       width: 200px;
       height: 200px; }
-    #main__index #main__section2 div .main__section2__texto {
+    #main__index #main__section2 .main__section2__texto {
       font-size: 1.5rem;
       font-family: 'Playfair', serif;
       margin: 5px 8vw 20px 8vw; }
@@ -152,7 +152,7 @@ header {
       #main__index #main__section3 .main__section3__fondo .main__section3__2columnas__subtitulo {
         font-size: 4rem;
         font-family: 'Playfair Display', serif;
-        padding-top: 2.5%;
+        padding-top: 10px;
         text-align: center; }
       #main__index #main__section3 .main__section3__fondo .main__section3__2columnas {
         display: flex;
@@ -256,9 +256,10 @@ header {
         justify-content: center;
         align-items: center; }
         #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section1__titulo {
-          font-size: 4rem;
+          font-size: 6rem;
           font-family: 'Playfair Display', serif;
-          margin-bottom: 20px; }
+          letter-spacing: 2vw;
+          margin: 10px; }
         #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section__descripcion {
           font-size: 2rem;
           font-family: 'Playfair', serif; }
@@ -554,6 +555,7 @@ header {
           height: 100%;
           object-fit: cover; }
         #main__act #section2__cartas .card .front h3 {
+          font-size: 2rem;
           position: absolute;
           bottom: 0;
           width: 100%;
@@ -647,9 +649,97 @@ footer {
   footer div a img {
     width: 30px;
     height: 30px; }
-  footer div a img {
-    width: 30px;
-    height: 30px; }
-  footer div a img {
-    width: 30px;
-    height: 30px; }
+
+@media only screen and (max-width: 1200px) {
+  header li {
+    margin: 10px; }
+  #main__index #main__section1 .main__section1__titulo {
+    font-size: 4.5rem;
+    letter-spacing: 2vw;
+    margin: 10px; }
+  #main__index #main__section1 .main__section1__reserva {
+    font-size: 3rem; }
+  #main__index #main__section2 .main__section2__titulo {
+    font-size: 2.5rem;
+    padding-top: 10px; }
+  #main__index #main__section2 .main__section2__texto {
+    font-size: 1.3rem;
+    margin: 10px 30px 30px 30px; }
+  #main__index #main__section3 .main__section3__fondo .main__section3__2columnas__subtitulo {
+    font-size: 2.5rem;
+    padding-top: 30px; }
+  #main__index #main__section3 .main__section3__fondo .main_imagenes {
+    width: 150px;
+    height: 150px; }
+  #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section1__titulo {
+    font-size: 4.5rem; }
+  #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section__descripcion {
+    font-size: 1.5rem; }
+  #main__habitaciones .main_fondo .habit__section .habit__section__fondo {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    #main__habitaciones .main_fondo .habit__section .habit__section__fondo .imagen_habit {
+      max-width: 100%;
+      height: 300px; }
+  #main__habitaciones a {
+    font-size: 2.5rem;
+    margin: 5px;
+    padding: 0; }
+  footer {
+    font-size: 1.3rem; }
+    footer div a img {
+      width: 20px;
+      height: 20px; }
+  #main__act #section1__descripcion .sombreado .titulo__act {
+    font-size: 4.5rem; }
+  #main__act #section1__descripcion .sombreado .slogan__act {
+    font-size: 1.5rem; }
+  #main__act #section2__cartas .card .back li {
+    font-size: 1.2rem; } }
+
+@media only screen and (max-width: 768px) {
+  #main__index #main__section3 .main__section3__fondo .main__section3__2columnas {
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "ubicacion"  "servicio"    "garantia" "precio"; }
+  footer {
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 660px) {
+  header nav .enlace .logo {
+    padding-right: 100px; }
+  header nav #check:checked ~ ul {
+    left: 0; }
+  header nav .checkbtn {
+    display: block; }
+  header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    height: 100%;
+    background: #2c3e50;
+    top: 15vh;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s; }
+    header nav ul li {
+      display: block;
+      margin: 50px 0;
+      margin: 5% 0;
+      line-height: 30px; }
+      header nav ul li .active {
+        background: none; }
+      header nav ul li .desactivar {
+        display: none; }
+      header nav ul li a {
+        font-size: 20px; }
+        header nav ul li a:hover {
+          background: none; } }
+
+@media only screen and (max-width: 490px) {
+  header nav .enlace .logo {
+    margin-right: 50px; } }

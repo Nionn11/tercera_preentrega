@@ -22,9 +22,10 @@
                 justify-content: center;
                 align-items: center;
                 .habit__main__section1__titulo {
-                    font-size: 4rem;
+                    font-size: map-get($map: $titulos, $key: "mayor");
                     font-family: 'Playfair Display', serif;
-                    margin-bottom: 20px;
+                    letter-spacing: 2vw;
+                    margin: 10px;
                 }
                 .habit__main__section__descripcion{
                     font-size: 2rem;
