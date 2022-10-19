@@ -14,21 +14,20 @@
         flex-direction: column;
         align-items: center;
         grid-area: section1;
-        background-color: rgba(0, 0, 0, 0.631);
+        background-color: rgba(0, 0, 0, 0.749);
         .main__section1__titulo{
-            font-size: 6rem;
+            font-size: map-get($map: $titulos, $key: "mayor");
             font-family: 'Playfair Display', serif;
             letter-spacing: 2vw;
             margin: 2.5%;
         }
         .main__section1__eslogan {
-            font-size: 2rem;
+            font-size: map-get($map: $titulos, $key: "mayor")/3;
             font-family: 'Playfair', serif;
-            margin: 2.5%;
         }
         .main__section1__reserva{
             color: bisque;
-            font-size: 3.6rem;
+            font-size: map-get($map: $titulos, $key: "mayor")/1.5;
             text-decoration: none;
             margin: 2.5%;
             cursor: pointer;
@@ -75,7 +74,7 @@
             .main__section2__texto {
                 font-size: 1.5rem;
                 font-family: 'Playfair', serif;    
-                margin: 5px 8vw 20px 8vw;
+                margin: 5px 8vw 30px 8vw;
             }
     }
     

@@ -79,19 +79,18 @@ header {
     flex-direction: column;
     align-items: center;
     grid-area: section1;
-    background-color: rgba(0, 0, 0, 0.631); }
+    background-color: rgba(0, 0, 0, 0.749); }
     #main__index #main__section1 .main__section1__titulo {
-      font-size: 6rem;
+      font-size: 5rem;
       font-family: 'Playfair Display', serif;
       letter-spacing: 2vw;
       margin: 2.5%; }
     #main__index #main__section1 .main__section1__eslogan {
-      font-size: 2rem;
-      font-family: 'Playfair', serif;
-      margin: 2.5%; }
+      font-size: 1.66667rem;
+      font-family: 'Playfair', serif; }
     #main__index #main__section1 .main__section1__reserva {
       color: bisque;
-      font-size: 3.6rem;
+      font-size: 3.33333rem;
       text-decoration: none;
       margin: 2.5%;
       cursor: pointer;
@@ -131,7 +130,7 @@ header {
     #main__index #main__section2 .main__section2__texto {
       font-size: 1.5rem;
       font-family: 'Playfair', serif;
-      margin: 5px 8vw 20px 8vw; }
+      margin: 5px 8vw 30px 8vw; }
   #main__index #main__section3 {
     height: auto;
     background-image: url(../assets/images/inicio.jpg);
@@ -240,7 +239,7 @@ header {
     justify-items: center;
     align-items: center; }
     #main__habitaciones .main_fondo .habit__section1 {
-      height: 80vh;
+      height: 60vh;
       width: 100%;
       background-image: url(../assets/images/Imagenes_habitaciones/habitacion_fondo.jpg);
       background-repeat: no-repeat;
@@ -248,7 +247,7 @@ header {
       background-size: cover; }
       #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo {
         width: inherit;
-        height: 80vh;
+        height: inherit;
         background-color: rgba(0, 0, 0, 0.619);
         text-align: center;
         display: flex;
@@ -256,12 +255,12 @@ header {
         justify-content: center;
         align-items: center; }
         #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section1__titulo {
-          font-size: 6rem;
+          font-size: 5rem;
           font-family: 'Playfair Display', serif;
           letter-spacing: 2vw;
-          margin: 10px; }
+          margin: 2.5%; }
         #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section__descripcion {
-          font-size: 2rem;
+          font-size: 1.66667rem;
           font-family: 'Playfair', serif; }
     #main__habitaciones .main_fondo .habit__section {
       margin: 2%; }
@@ -508,6 +507,15 @@ header {
       background-size: cover;
       background-position: center;
       background-image: url("../assets/images/Imagenes_restaurante/slide28.jpg"); }
+    #main__restaurante #slider-container .menu__titulo {
+      font-size: 5rem;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 2vw;
+      margin: 2.5%; }
+    #main__restaurante #slider-container .menu__slogan {
+      font-size: 1.66667rem;
+      font-family: 'Playfair', serif;
+      padding: 4%; }
 
 #main__act {
   grid-area: main;
@@ -529,9 +537,10 @@ header {
       #main__act #section1__descripcion .sombreado .titulo__act {
         font-size: 5rem;
         font-family: 'Playfair Display', serif;
-        letter-spacing: 2vw; }
+        letter-spacing: 2vw;
+        margin: 2.5%; }
       #main__act #section1__descripcion .sombreado .slogan__act {
-        font-size: 2rem;
+        font-size: 1.66667rem;
         font-family: 'Playfair', serif;
         margin: 5px 5px 40px 5px; }
   #main__act #section2__cartas {
@@ -644,9 +653,13 @@ header {
       background: #1e668f;
       border: none;
       padding: 1.5%;
-      color: white;
+      color: bisque;
       margin: 1% 0;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      cursor: pointer; }
+      #main__reserva .formulario .boton:active {
+        background: bisque;
+        color: #07334d; }
 
 footer {
   grid-area: footer;
@@ -667,11 +680,11 @@ footer {
   header li {
     margin: 10px; }
   #main__index #main__section1 .main__section1__titulo {
-    font-size: 4.5rem;
-    letter-spacing: 2vw;
-    margin: 10px; }
+    font-size: 4rem; }
+  #main__index #main__section1 .main__section1__eslogan {
+    font-size: 1.33333rem; }
   #main__index #main__section1 .main__section1__reserva {
-    font-size: 3rem; }
+    font-size: 2.66667rem; }
   #main__index #main__section2 .main__section2__titulo {
     font-size: 2.5rem;
     padding-top: 10px; }
@@ -685,9 +698,9 @@ footer {
     width: 150px;
     height: 150px; }
   #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section1__titulo {
-    font-size: 4.5rem; }
+    font-size: 4rem; }
   #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section__descripcion {
-    font-size: 1.5rem; }
+    font-size: 1.33333rem; }
   #main__habitaciones .main_fondo .habit__section .habit__section__fondo {
     display: flex;
     flex-direction: column;
@@ -699,19 +712,29 @@ footer {
     font-size: 2.5rem;
     margin: 5px;
     padding: 0; }
+  #main__restaurante #slider-container .menu__titulo {
+    font-size: 4rem; }
+  #main__restaurante #slider-container .menu__slogan {
+    font-size: 1.33333rem; }
+  #main__act #section1__descripcion .sombreado .titulo__act {
+    font-size: 4rem; }
+  #main__act #section1__descripcion .sombreado .slogan__act {
+    font-size: 1.33333rem; }
+  #main__act #section2__cartas .card .back li {
+    font-size: 1.2rem; }
   footer {
     font-size: 1.3rem; }
     footer div a img {
       width: 20px;
-      height: 20px; }
-  #main__act #section1__descripcion .sombreado .titulo__act {
-    font-size: 4.5rem; }
-  #main__act #section1__descripcion .sombreado .slogan__act {
-    font-size: 1.5rem; }
-  #main__act #section2__cartas .card .back li {
-    font-size: 1.2rem; } }
+      height: 20px; } }
 
 @media only screen and (max-width: 790px) {
+  #main__index #main__section1 .main__section1__titulo {
+    font-size: 3rem; }
+  #main__index #main__section1 .main__section1__eslogan {
+    font-size: 1rem; }
+  #main__index #main__section1 .main__section1__reserva {
+    font-size: 2rem; }
   #main__index #main__section3 .main__section3__fondo .main__section3__2columnas {
     display: flex;
     justify-content: space-around;
@@ -719,6 +742,10 @@ footer {
     grid-template-rows: auto auto;
     grid-template-columns: auto auto auto auto;
     grid-template-areas: "ubicacion"  "servicio"    "garantia" "precio"; }
+  #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section1__titulo {
+    font-size: 3rem; }
+  #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section__descripcion {
+    font-size: 1rem; }
   #main__restaurante {
     height: auto;
     grid-template-columns: auto;
@@ -729,12 +756,20 @@ footer {
       justify-content: start; }
       #main__restaurante #slider-container h1 {
         margin-top: 25px; }
+      #main__restaurante #slider-container .menu__titulo {
+        font-size: 3rem; }
+      #main__restaurante #slider-container .menu__slogan {
+        font-size: 1rem; }
+  #main__act #section1__descripcion .sombreado .titulo__act {
+    font-size: 3rem; }
+  #main__act #section1__descripcion .sombreado .slogan__act {
+    font-size: 1rem; }
   footer {
     font-size: 1rem; } }
 
 @media only screen and (max-width: 660px) {
-  header nav .enlace .logo {
-    padding-right: 100px; }
+  header nav .enlace {
+    margin-right: 40%; }
   header nav #check:checked ~ ul {
     left: 0; }
   header nav .checkbtn {
@@ -764,17 +799,12 @@ footer {
           background: none; } }
 
 @media only screen and (max-width: 490px) {
-  header nav .enlace .logo {
-    padding: 0; }
   #main__index #main__section1 .main__section1__titulo {
-    font-size: 2rem;
-    margin: 4px; }
+    font-size: 2.5rem; }
   #main__index #main__section1 .main__section1__eslogan {
-    font-size: 1rem;
-    margin: 2px; }
+    font-size: 0.83333rem; }
   #main__index #main__section1 .main__section1__reserva {
-    font-size: 1.2rem;
-    margin: 4px; }
+    font-size: 1.66667rem; }
   #main__index #main__section2 .main__section2__titulo {
     font-size: 2rem; }
   #main__index #main__section2 .main__imagenes {
@@ -782,7 +812,7 @@ footer {
     height: 150px; }
   #main__index #main__section2 .main__section2__texto {
     font-size: 1rem;
-    margin: 0; }
+    margin: 3%; }
   #main__index #main__section3 .main__section3__fondo {
     background-color: rgba(0, 0, 0, 0.85); }
     #main__index #main__section3 .main__section3__fondo .main__section3__2columnas__titulo {
@@ -816,13 +846,9 @@ footer {
     #main__index #main__section3 .main__section3__fondo .main__section3__2columnas .main__section3__2columnas__precio .main__section3__texto__columnas {
       font-size: 1.2rem; }
   #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section1__titulo {
-    font-size: 1.7rem;
-    letter-spacing: 2vw;
-    margin: 10px; }
+    font-size: 2.5rem; }
   #main__habitaciones .main_fondo .habit__section1 .habit__section1__fondo .habit__main__section__descripcion {
-    font-size: 1rem;
-    margin: 0;
-    padding: 0; }
+    font-size: 0.83333rem; }
   #main__habitaciones .main_fondo .habit__section {
     margin: 2%; }
     #main__habitaciones .main_fondo .habit__section .habit__main__subtitulo {
@@ -844,11 +870,14 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 1.5rem; }
+  #main__restaurante #slider-container .menu__titulo {
+    font-size: 2.5rem; }
+  #main__restaurante #slider-container .menu__slogan {
+    font-size: 0.83333rem; }
   #main__act #section1__descripcion .sombreado .titulo__act {
-    font-size: 2rem; }
+    font-size: 2.5rem; }
   #main__act #section1__descripcion .sombreado .slogan__act {
-    font-size: 1rem;
-    margin: 10px; }
+    font-size: 0.83333rem; }
   footer {
     display: flex;
     flex-wrap: wrap;

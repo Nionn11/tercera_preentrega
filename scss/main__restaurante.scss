@@ -115,5 +115,16 @@
                 background-image: url('../assets/images/Imagenes_restaurante/slide#{$i}.jpg');
             }
         }
+        .menu__titulo {
+            font-size: map-get($map: $titulos, $key: "mayor");
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2vw;
+            margin: 2.5%;
+        }
+        .menu__slogan {
+            font-size: map-get($map: $titulos, $key: "mayor")/3;
+            font-family: 'Playfair', serif;
+            padding: 4%;
+        }
     } 
 }

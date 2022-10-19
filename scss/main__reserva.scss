@@ -33,9 +33,14 @@
             background: rgb(30, 102, 143);
             border: none;
             padding: 1.5%;
-            color: white;
+            color: bisque;
             margin: 1% 0;
             font-size: 1.3rem;
+            cursor: pointer;
+            &:active {
+                background: bisque;
+                color: rgb(7, 51, 77);
+            }
         }
     }
 }

@@ -8,13 +8,13 @@
         justify-items: center;
         align-items: center;
         .habit__section1 {
-            height: 80vh;
+            height: 60vh;
             width: 100%;
             background-image: url(../assets/images/Imagenes_habitaciones/habitacion_fondo.jpg);
             @include backgrounds;
             .habit__section1__fondo {
                 width: inherit;
-                height: 80vh;
+                height: inherit;
                 background-color: rgba(0, 0, 0, 0.619);
                 text-align: center;
                 display: flex;
@@ -25,10 +25,10 @@
                     font-size: map-get($map: $titulos, $key: "mayor");
                     font-family: 'Playfair Display', serif;
                     letter-spacing: 2vw;
-                    margin: 10px;
+                    margin: 2.5%;
                 }
                 .habit__main__section__descripcion{
-                    font-size: 2rem;
+                    font-size: map-get($map: $titulos, $key: "mayor")/3;
                     font-family: 'Playfair', serif;
                 }
             }

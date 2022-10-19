@@ -8,18 +8,18 @@
         #main__section1 {
             .main__section1__titulo{
                 font-size: map-get($map: $titulos, $key: "pc");
-                letter-spacing: 2vw;
-                margin: 10px;
+            }
+            .main__section1__eslogan {
+                font-size: map-get($map: $titulos, $key: "pc")/3;
             }
             .main__section1__reserva{
-                font-size: 3rem;
+                font-size: map-get($map: $titulos, $key: "pc")/1.5;
                 }
             }
         #main__section2 {
                 .main__section2__titulo {
                     font-size: 2.5rem;
                     padding-top: 10px;
-
                 }
                 .main__section2__texto {
                     font-size: 1.3rem;
@@ -46,7 +46,7 @@
                     .habit__main__section1__titulo {
                         font-size: map-get($map: $titulos, $key: "pc");
                     }
-                    .habit__main__section__descripcion{
+                    .habit__main__section__descripcion {
                         font-size: (map-get($map: $titulos, $key: "pc"))/3;
                     }
                 }
@@ -69,16 +69,15 @@
             padding: 0
         }
     }
-    footer {
-        font-size: 1.3rem;
-        div {
-            a {
-                img {
-                    width: 20px;
-                    height: 20px;
-                }
+    #main__restaurante {
+        #slider-container {
+            .menu__titulo {
+                font-size: map-get($map: $titulos, $key: "pc");
             }
-        }
+            .menu__slogan {
+                font-size: (map-get($map: $titulos, $key: "pc"))/3;
+            }
+        } 
     }
     #main__act {
         #section1__descripcion {
@@ -87,7 +86,7 @@
                     font-size: map-get($map: $titulos, $key: "pc");
                 }
                 .slogan__act {
-                    font-size: 1.5rem;
+                    font-size: (map-get($map: $titulos, $key: "pc"))/3;
                 }
             }
         }
@@ -101,10 +100,32 @@
             }
         }
     }
+    footer {
+        font-size: 1.3rem;
+        div {
+            a {
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 790px) {
     #main__index {
+        #main__section1 {
+            .main__section1__titulo{
+                font-size: map-get($map: $titulos, $key: "tablet");
+            }
+            .main__section1__eslogan {
+                font-size: map-get($map: $titulos, $key: "tablet")/3;
+            }
+            .main__section1__reserva{
+                font-size: map-get($map: $titulos, $key: "tablet")/1.5;
+                }
+            }
         #main__section3 {
             .main__section3__fondo {
                 .main__section3__2columnas {
@@ -117,6 +138,20 @@
                                         "servicio"   
                                         "garantia"
                                         "precio";
+                }
+            }                                     
+        }
+    }
+    #main__habitaciones {
+        .main_fondo {
+            .habit__section1 {
+                .habit__section1__fondo {
+                    .habit__main__section1__titulo {
+                        font-size: map-get($map: $titulos, $key: "tablet");
+                    }
+                    .habit__main__section__descripcion {
+                        font-size: (map-get($map: $titulos, $key: "tablet"))/3;
+                    }
                 }
             }
         }
@@ -132,7 +167,25 @@
             h1 {
                 margin-top: 25px;
             }
+            .menu__titulo {
+                font-size: map-get($map: $titulos, $key: "tablet");
+            }
+            .menu__slogan {
+                font-size: (map-get($map: $titulos, $key: "tablet"))/3;
+            }
           }
+    }
+    #main__act {
+        #section1__descripcion {
+            .sombreado {
+                .titulo__act {
+                    font-size: map-get($map: $titulos, $key: "tablet");
+                }
+                .slogan__act {
+                    font-size: (map-get($map: $titulos, $key: "tablet"))/3;
+                }
+            }
+        }
     }
     footer {
         font-size: 1rem;
@@ -143,9 +196,7 @@
     header {
         nav {
             .enlace {
-                .logo {
-                    padding-right: 100px;
-                }
+                margin-right: 40%;
             }
             #check {
                 &:checked ~ ul{
@@ -188,28 +239,16 @@
     }
 }
 @media only screen and (max-width: 490px) {
-    header {
-        nav {
-            .enlace {
-                .logo {
-                    padding: 0;
-                }
-            }
-        }
-    }
     #main__index {
         #main__section1 {
             .main__section1__titulo{
-                font-size: 2rem;
-                margin: 4px;
+                font-size: map-get($map: $titulos, $key: "celular");
             }
             .main__section1__eslogan {
-                font-size: 1rem;
-                margin: 2px;
+                font-size: map-get($map: $titulos, $key: "celular")/3;
             }
             .main__section1__reserva{
-                font-size: 1.2rem;
-                margin: 4px;
+                font-size: map-get($map: $titulos, $key: "celular")/1.5;
             }
         }
         #main__section2 {
@@ -222,7 +261,7 @@
                 }
                 .main__section2__texto {
                     font-size: 1rem;    
-                    margin: 0;
+                    margin: 3%;
                 }
         }
         #main__section3 {
@@ -289,14 +328,10 @@
             .habit__section1 {
                 .habit__section1__fondo {
                     .habit__main__section1__titulo {
-                        font-size: 1.7rem;
-                        letter-spacing: 2vw;
-                        margin: 10px;
+                        font-size: map-get($map: $titulos, $key: "celular");
                     }
-                    .habit__main__section__descripcion{
-                        font-size: 1rem;
-                        margin: 0;
-                        padding: 0;
+                    .habit__main__section__descripcion {
+                        font-size: (map-get($map: $titulos, $key: "celular"))/3;
                     }
                 }
             }
@@ -329,16 +364,24 @@
             font-size: 1.5rem;
         }
     }
+    #main__restaurante {
+        #slider-container {
+            .menu__titulo {
+                font-size: map-get($map: $titulos, $key: "celular");
+            }
+            .menu__slogan {
+                font-size: (map-get($map: $titulos, $key: "celular"))/3;
+            }
+        } 
+    }
     #main__act {
-
         #section1__descripcion {
             .sombreado {
                 .titulo__act {
-                    font-size: 2rem; 
+                    font-size: map-get($map: $titulos, $key: "celular");
                 }
                 .slogan__act {
-                    font-size: 1rem;
-                    margin: 10px;
+                    font-size: (map-get($map: $titulos, $key: "celular"))/3;
                 }
             }
         }
