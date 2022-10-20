@@ -112,7 +112,7 @@
             .slider-content:nth-child(#{$i}) {
                 background-size: cover;
                 background-position: center;
-                background-image: url('../assets/images/Imagenes_restaurante/slide#{$i}.jpg');
+                background-image: url('../assets/images/Imagenes_restaurante/slide#{$i}.webp');
             }
         }
         .menu__titulo {

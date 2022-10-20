@@ -133,7 +133,7 @@ header {
       margin: 5px 8vw 30px 8vw; }
   #main__index #main__section3 {
     height: auto;
-    background-image: url(../assets/images/inicio.jpg);
+    background-image: url(../assets/images/Imagenes_index/inicio.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -241,7 +241,7 @@ header {
     #main__habitaciones .main_fondo .habit__section1 {
       height: 60vh;
       width: 100%;
-      background-image: url(../assets/images/Imagenes_habitaciones/habitacion_fondo.jpg);
+      background-image: url(../assets/images/Imagenes_habitaciones/habitacion_fondo.webp);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
@@ -398,115 +398,115 @@ header {
     #main__restaurante #slider-container .slider-content:nth-child(1) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide1.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide1.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(2) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide2.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide2.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(3) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide3.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide3.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(4) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide4.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide4.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(5) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide5.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide5.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(6) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide6.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide6.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(7) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide7.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide7.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(8) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide8.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide8.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(9) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide9.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide9.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(10) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide10.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide10.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(11) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide11.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide11.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(12) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide12.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide12.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(13) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide13.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide13.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(14) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide14.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide14.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(15) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide15.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide15.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(16) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide16.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide16.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(17) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide17.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide17.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(18) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide18.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide18.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(19) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide19.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide19.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(20) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide20.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide20.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(21) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide21.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide21.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(22) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide22.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide22.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(23) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide23.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide23.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(24) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide24.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide24.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(25) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide25.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide25.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(26) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide26.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide26.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(27) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide27.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide27.webp"); }
     #main__restaurante #slider-container .slider-content:nth-child(28) {
       background-size: cover;
       background-position: center;
-      background-image: url("../assets/images/Imagenes_restaurante/slide28.jpg"); }
+      background-image: url("../assets/images/Imagenes_restaurante/slide28.webp"); }
     #main__restaurante #slider-container .menu__titulo {
       font-size: 5rem;
       font-family: 'Playfair Display', serif;
@@ -524,7 +524,7 @@ header {
   #main__act #section1__descripcion {
     text-align: center;
     height: 40vh;
-    background-image: url(../assets/images/Imagenes_actividades/Actividades_panoramica.jpg);
+    background-image: url(../assets/images/Imagenes_actividades/Actividades_panoramica.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
